@@ -14,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 100px;
 }
 .Benefits .section .content {
@@ -44,6 +44,7 @@
 }
 .Benefits .section .images img {
   height: 50%;
+  width: 100%;
 }
 @media (max-width:768px) {
   .Benefits .section .images img {
@@ -51,7 +52,14 @@
   }
 }
 @media (max-width:992px) {
-  .Benefits .section .images img {
-  /* width: 40 !important; */
+  .Benefits .section {
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+  .Benefits .section .cards{
+    order: 2;
+  }
+  .Benefits .section .images{
+    order: 1;
   }
 }

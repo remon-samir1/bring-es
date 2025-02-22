@@ -19,7 +19,7 @@ const CardInfo = (props) => {
       {props.btn && 
         <Link to='' className='Button readmore'>
         
-        <span className=''>read more</span>
+        <span className=''>Read More</span>
 
         <img src={require('../../../../images/uiw_d-arrow-right.png')} alt="arrow" width='15px' loading='lazy' />
        

@@ -62,6 +62,7 @@ const HeroSection = () => {
               src={require("../../../../images/location.png")}
               alt=""
               width="30px"
+              className="location"
             />
             <input
               type="text"

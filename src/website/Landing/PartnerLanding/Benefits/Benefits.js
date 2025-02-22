@@ -5,7 +5,7 @@ const Benefits = () => {
     <div className='Benefits '>
       <h4>Benefits of Partnering with Us</h4>
       <div className="section">
-        <div className='d-flex flex-column gap-4 cards order-2 order-md-1'>
+        <div className='d-flex flex-column gap-4 cards '>
 
         <div className="content">
           <div className="image">
@@ -38,7 +38,7 @@ const Benefits = () => {
           </div>
         </div>
         </div>
-        <div className="images order-1 order-md-2">
+        <div className="images">
         <img src={require('../../../../images/chefes.png')} alt="chef" loading='lazy' />
         </div>
       </div>

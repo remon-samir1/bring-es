@@ -14,7 +14,7 @@ const DownloadBtn = (props) => {
       />
       <div className="content-btn">
         <span>{props.apple ?'Available on the' : 'GET IT ON'}</span>
-        <p>{props.apple ? 'Apple Store' : 'Google Play'}</p>
+        <p className="btn-text">{props.apple ? 'Apple Store' : 'Google Play'}</p>
       </div>
     </a>
   );

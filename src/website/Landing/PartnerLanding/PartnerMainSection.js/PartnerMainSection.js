@@ -13,10 +13,10 @@ const PartnerMainSection = () => {
 
         <div className="main">
           <div className="contant  ">
-            <h2 className="px-2 px-md-4">
+            <h2 className="">
               Join to our Business with bringses team
             </h2>
-            <p className="px-2 px-md-4">
+            <p className="">
               Become a partner to reach to more customers, grow you business and
               earn more money
             </p>
@@ -28,7 +28,7 @@ const PartnerMainSection = () => {
               id="main-image"
             />
 
-            <div className="partners-withus px-0 px-md-4">
+            <div className="partners-withus">
               <img
                 src={require("../../../../images/framer.png")}
                 alt=""

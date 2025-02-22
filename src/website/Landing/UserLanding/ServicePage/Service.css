@@ -23,6 +23,19 @@
 .service .container .image img {
   height: 100%;
   width: 100%;
+  animation: move 3s ease-in-out infinite;
+
+}
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 .service .sr-card {
   background-color: #f9f9f9;

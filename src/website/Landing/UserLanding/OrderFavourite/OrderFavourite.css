@@ -45,4 +45,10 @@
   height: 45px;
   font-size: 1.25rem;
   text-transform: capitalize;
-}/*# sourceMappingURL=OrderFavourite.css.map */
+  transition: 1s;
+}
+.OrderFavourite .CardForOrder .Button:hover{
+ transform:  scale(0.9);
+ 
+
+}

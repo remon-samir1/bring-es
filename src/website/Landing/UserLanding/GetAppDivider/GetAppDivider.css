@@ -28,6 +28,9 @@
   display: flex;
   gap: 20px;
 }
+.GetAppDivider .btns p:hover{
+  color: var(--btn-color);
+}
 .GetAppDivider a {
   text-decoration: none;
   display: flex;

@@ -102,6 +102,7 @@
   align-items: center;
   gap: 10px;
   text-decoration: none;
+  transition: 1s;
 }
 .cardinfo .readmore span {
   font-size: 1rem;
@@ -109,6 +110,22 @@
 .cardinfo .readmore img {
   width: 20px;
   height: 20px;
+  animation: move-X 1s ease-in-out infinite;
+}
+.cardinfo .readmore:hover{
+  transform: translate(-50%, -10%);
+
+}
+@keyframes move-X {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 .swiper-wrapper {
