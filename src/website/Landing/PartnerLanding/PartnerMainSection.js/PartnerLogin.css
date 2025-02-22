@@ -76,7 +76,7 @@
     
     position: absolute;
     width: 380px;
-    left: 25%;
+    left: 30%;
     
     top: 75%;
   }
@@ -92,12 +92,12 @@
 
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .partner-login {
     
     position: absolute;
     width: 100vw;
-    left: 20%;
+    left: 22%;
     
     top: 75%;
   } 
