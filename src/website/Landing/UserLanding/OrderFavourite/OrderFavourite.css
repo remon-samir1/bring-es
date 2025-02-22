@@ -52,3 +52,9 @@
  
 
 }
+@media (max-width:600px) {
+  .OrderFavourite .CardForOrder {
+
+    padding: 20px;
+  }
+}
