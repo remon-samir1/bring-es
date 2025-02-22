@@ -55,6 +55,8 @@
   .Benefits .section {
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
+  padding: 0;
   }
   .Benefits .section .cards{
     order: 2;

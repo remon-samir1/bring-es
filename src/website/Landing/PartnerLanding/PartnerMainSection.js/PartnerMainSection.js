@@ -12,7 +12,7 @@ const PartnerMainSection = () => {
         <PartnerLogin setLoad={setLoad} />
 
         <div className="main">
-          <div className="contant  ">
+          <div className="contant">
             <h2 className="">
               Join to our Business with bringses team
             </h2>

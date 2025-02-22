@@ -6,7 +6,7 @@
   background-color: var(--bg-color);
 }
 .PartnerMainSection .container {
-  margin-right: 0 !important;
+  /* margin-right: 0 !important; */
 }
 .PartnerMainSection .main {
   display: flex;
@@ -25,7 +25,7 @@
   font-size: 2.8rem;
   letter-spacing: 1px;
   line-height: 4.4rem;
-  padding-left: 30px;
+  /* padding-left: 30px; */
 
 }
 .PartnerMainSection .main .contant p {
@@ -33,7 +33,7 @@
   color: #858585;
   margin-top: 1.25rem;
   line-height: 2rem;
-  padding-left: 30px;
+  /* padding-left: 30px; */
 
 }
 .PartnerMainSection .main .contant .partners-withus{
@@ -41,7 +41,7 @@
 }
 .PartnerMainSection .main .contant .second-image {
   display: none;
-  
+  box-sizing: border-box;
 }
 .PartnerMainSection .main .layout .main-image {
   max-height: 800px;
@@ -77,15 +77,23 @@
   .PartnerMainSection {
     margin-bottom: 300px;
   }
+  .PartnerMainSection .main{
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
   .PartnerMainSection .main .contant .second-image {
     display: none;
-    /* width: 100% !important ; */
+    box-sizing: border-box;
+    width: 100% !important;
+
   }
   .PartnerMainSection .main .contant .partners-withus {
     width: max-content;
     position: relative;
     z-index: 100;
     top: 300px;
+    padding-left: 0;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: start;
