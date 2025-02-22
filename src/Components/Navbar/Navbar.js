@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import DropDown from "../DropDown/DropDown";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
+import Logo from "../Logo";
 
 const Navbar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +35,7 @@ const Navbar = (props) => {
   return (
     <>
       <div className="navbar px-4 container">
-        <div className="logo">Bring-es</div>
+        <Link to='/' className="logo"><Logo width='150px'/></Link>
 
         <div className="links">
           <Link className="nav-links" to={props.path1}>
@@ -79,7 +80,7 @@ const Navbar = (props) => {
         {isOpen && (
           <div className="res-nav">
             <div className={`res-links ${isOpen && "open"}`}>
-              <Link className="nav-links nav-animation" to="">
+              <Link className="nav-links nav-animation" to="/">
                 Home
               </Link>
               <Link className="nav-links nav-animation" to={props.path1}>

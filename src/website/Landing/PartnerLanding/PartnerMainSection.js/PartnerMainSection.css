@@ -18,7 +18,7 @@
 .PartnerMainSection .main .contant {
   max-width: 600px;
   text-align: start;
-  margin-bottom: 60px;
+  margin-bottom: 150px;
 }
 .PartnerMainSection .main .contant h2 {
   font-weight: 500;
@@ -53,7 +53,7 @@
   }
   .PartnerMainSection .main .contant {
   width: 100% !important;
-
+  margin-bottom: 20px;
   }
   
   .PartnerMainSection .main .contant .second-image{
