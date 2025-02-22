@@ -1,0 +1,68 @@
+.HowWork {
+  width: 100%;
+  margin-top: 100px;
+  min-height: 100vh;
+}
+.HowWork .content {
+  text-align: center;
+  color: var(--text-color);
+  line-height: 3rem;
+  max-width: 430px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.HowWork .content h3 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+.HowWork .content p {
+  color: var(--second-text-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.7rem;
+}
+.HowWork .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap !important;
+  height: max-content;
+}
+.HowWork .HowWorkCard {
+  border-radius: 20px;
+  filter: drop-shadow(1px 1px 10px rgba(80, 77, 77, 0.0901960784));
+  background-color: #F9F9F9;
+}
+.HowWork .HowWorkCard .card-icon {
+  background-color: var(--bg-color);
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding-top: 10px;
+}
+.HowWork .HowWorkCard .card-icon img {
+  width: 90px;
+}
+.HowWork .HowWorkCard .card-content {
+  margin-top: 20px;
+  background: url("../../../../images/howWorkCardBg.png");
+  background-clip: border-box;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  background-position: 10% 20%;
+  padding: 40px 10px 20px 10px;
+  height: 100%;
+}
+.HowWork .HowWorkCard .card-content h6 {
+  color: var(--text-color);
+}
+.HowWork .HowWorkCard .card-content p {
+  color: var(--second-text-color);
+  font-size: 16px;
+  margin-top: 10px;
+}/*# sourceMappingURL=HowWork.css.map */

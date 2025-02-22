@@ -1,0 +1,48 @@
+.OrderFavourite .text {
+  text-align: center;
+  max-width: 520px;
+  margin: auto;
+}
+.OrderFavourite .text h3 {
+  font-size: 2.5rem;
+  color: var(--text-color);
+}
+.OrderFavourite .text p {
+  color: var(--second-text-color);
+  font-size: 1.2rem;
+}
+.OrderFavourite .cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.9rem;
+}
+.OrderFavourite .CardForOrder {
+  background-color: var(--primary-color);
+  padding: 20px 40px;
+}
+.OrderFavourite .CardForOrder .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.OrderFavourite .CardForOrder .content h4 {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+.OrderFavourite .CardForOrder .content p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-weight: 400;
+}
+.OrderFavourite .CardForOrder .content img {
+  width: 9rem;
+}
+.OrderFavourite .CardForOrder .Button {
+  margin-top: 20px;
+  height: 45px;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}/*# sourceMappingURL=OrderFavourite.css.map */

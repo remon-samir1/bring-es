@@ -1,0 +1,39 @@
+.d-Down {
+  width: 100%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  height: -moz-max-content;
+  height: max-content;
+  justify-content: start;
+  border-bottom: 1px solid rgb(231, 219, 230);
+  width: 100%;
+  cursor: pointer;
+  padding: 20px;
+}
+.d-Down .toggle {
+  display: flex;
+  /* justify-content: center; */
+  align-items: self-start;
+  gap: 10px;
+  color: var(--btn-color);
+  font-size: 18px;
+  color: var(--btn-color);
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+}
+.d-Down .menu {
+  transition: 0.3s ease;
+  margin-top: -10px;
+  transform: translateY(-10px);
+}
+.d-Down .menu button {
+  color: var(--btn-color);
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+.d-Down .menu.open {
+  transform: translateY(0);
+}/*# sourceMappingURL=DropDown.css.map */

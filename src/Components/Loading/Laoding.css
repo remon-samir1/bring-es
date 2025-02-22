@@ -1,0 +1,12 @@
+.Loading {
+  height: 100vh;
+  background-color: rgba(54, 52, 52, 0.25);
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}/*# sourceMappingURL=Laoding.css.map */

@@ -1,0 +1,77 @@
+.GetAppDivider {
+  background-image: url("../../../../images/pinkbg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 500px;
+  margin-top: 100px;
+}
+.GetAppDivider .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.GetAppDivider .container img {
+  max-width: 300px;
+}
+.GetAppDivider .container .content h3 {
+  font-size: 2.5rem;
+  color: var(--text-color);
+}
+.GetAppDivider .container .content p {
+  font-size: 1.9rem;
+  color: var(--text-color);
+}
+.GetAppDivider .btns {
+  display: flex;
+  gap: 20px;
+}
+.GetAppDivider a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #000;
+  color: #fff;
+  height: 50px;
+  padding: 5px 10px;
+  border-radius: 7px;
+}
+.GetAppDivider a img {
+  width: 25px;
+}
+.GetAppDivider a span {
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: 15px;
+  display: inline-block;
+}
+.GetAppDivider a p {
+  font-weight: 500;
+  font-size: 16px !important;
+  color: #fff !important;
+}
+
+@media (max-width: 992px) {
+  .GetAppDivider {
+    background-size: 100% 40%;
+    margin-top: -100px;
+  }
+  .GetAppDivider .phoneimage img {
+    width: 23vw;
+  }
+  .GetAppDivider .content h3 {
+    margin-top: 8vh;
+    font-size: 25px !important;
+  }
+  .GetAppDivider .content p {
+    font-size: 18px !important;
+  }
+  .GetAppDivider .btns {
+    position: relative;
+    top: 15vh;
+    left: -18%;
+  }
+}/*# sourceMappingURL=GetAppDivider.css.map */

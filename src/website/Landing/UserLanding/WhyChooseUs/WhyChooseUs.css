@@ -1,0 +1,156 @@
+.whychoose {
+  background-image: url("../../../../images/linearrow.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: 95% 100%;
+  width: 100%;
+  margin-top: 100px;
+}
+.whychoose .readmore-res {
+  position: relative;
+  bottom: 85px;
+  height: 55px;
+  padding: 10px 20px;
+  width: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  display: none;
+}
+.whychoose .readmore-res span {
+  font-size: 1rem;
+}
+.whychoose .readmore-res img {
+  width: 20px;
+  height: 20px;
+}
+.whychoose .content {
+  text-align: center;
+  color: var(--text-color);
+  line-height: 3rem;
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.whychoose .content h3 {
+  font-size: 2.5rem;
+  white-space: wrap;
+  font-weight: 500;
+}
+.whychoose .content p {
+  color: var(--second-text-color);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+}
+.whychoose .cards {
+  height: 100%;
+  width: 100%;
+  /* margin-top: 50px; */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+.cardinfo {
+  position: relative;
+  height: 387px;
+  width: 350px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1215686275);
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color);
+}
+.cardinfo h4 {
+  color: var(--text-color);
+  margin-top: 15px;
+  font-size: 1.7rem;
+}
+.cardinfo p {
+  color: var(--second-text-color);
+  font-size: 1rem;
+  line-height: 30px;
+}
+.cardinfo .image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.cardinfo .image img {
+  width: 10rem;
+}
+.cardinfo .readmore {
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translate(-50%, 0%);
+  height: 55px;
+  padding: 10px 20px;
+  width: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.cardinfo .readmore span {
+  font-size: 1rem;
+}
+.cardinfo .readmore img {
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-wrapper {
+  align-items: flex-end;
+  gap: 10px;
+  margin-bottom: 100px;
+}
+
+.swiper-slide {
+  background-color: transparent;
+}
+
+@media (max-width: 992px) {
+  .whychoose {
+    background: transparent;
+  }
+  .whychoose .readmore-res {
+    display: flex;
+  }
+  .whychoose .cardinfo {
+    width: 95% !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+  }
+  .whychoose .cardinfo .readmore {
+    display: none;
+  }
+}
+@media (max-width: 992px) and (max-width: 768px) {
+  .cardinfo {
+    height: 250px !important;
+  }
+  .cardinfo img {
+    width: 130px;
+  }
+  .cardinfo .card-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}/*# sourceMappingURL=WhyChooseUs.css.map */

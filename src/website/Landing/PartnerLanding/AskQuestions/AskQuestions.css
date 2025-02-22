@@ -1,0 +1,43 @@
+.questions {
+  height: 100vh;
+  /* margin-top: 50px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.questions .header h3 {
+  font-size: 2.5rem;
+  color: var(--text-color);
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-button::before {
+  content: url("../../../../images/acordionArrow.png");
+  font-weight: 600;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  width: 20px;
+  margin-right: 20px;
+  transition: 0.5s;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #fff !important;
+  box-shadow: none !important;
+  outline: none !important;
+  border: none;
+  color: var(--btn-color) !important;
+}
+
+.accordion-button:not(.collapsed)::before {
+  transform: rotate(90deg);
+}/*# sourceMappingURL=AskQuestions.css.map */

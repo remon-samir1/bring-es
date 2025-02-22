@@ -1,0 +1,57 @@
+.Benefits {
+  margin-top: 50px;
+  min-height: 100vh;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.Benefits h4 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--text-color);
+}
+.Benefits .section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.Benefits .section .content {
+  order:2;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  height: -moz-max-content;
+  height: max-content;
+  justify-content: center;
+  gap: 20px;
+}
+.Benefits .section .content h5 {
+  font-size: 1.3rem;
+  color: var(--text-color);
+}
+.Benefits .section .content p {
+  font-size: 1rem;
+  color: var(--second-text-color);
+  /* white-space: pre-wrap; */
+}
+.Benefits .section .content img {
+  width: 100px;
+}
+.Benefits .section .images{
+  order: 1;
+}
+.Benefits .section .images img {
+  height: 50%;
+}
+@media (max-width:768px) {
+  .Benefits .section .images img {
+  width: 100%;
+  }
+}
+@media (max-width:992px) {
+  .Benefits .section .images img {
+  /* width: 40 !important; */
+  }
+}

@@ -1,0 +1,76 @@
+.PhoneNumberInput {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 10px;
+  width: 100%;
+}
+.PhoneNumberInput .inputFeild {
+  /* border: 0.5px solid #d6d6d6;  */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 10px;
+  /* padding: 15px 20px; */
+}
+.PhoneNumberInput input {
+  border: none;
+  flex-grow: 1;
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  /* background-image: url("../../images//charm_north-star.png"); */
+  background-repeat: no-repeat;
+  background-size: 9px;
+  background-position: 53%;
+}
+.PhoneNumberInput select {
+  border: none;
+  display: flex;
+  outline: none;
+  background-color: transparent;
+}
+.PhoneNumberInput .SelectFeild {
+  display: flex;
+  color: gray;
+  font-size: 0.9rem;
+  margin-right: 10px;
+  border: 0.5px solid #d6d6d6;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 9px 5px;
+}
+.PhoneNumberInput .SelectFeild img {
+  width: 25px;
+  height: 25px;
+}
+
+.validation-num .error{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+.validation-num .error img{
+  width: 20px;
+  height: 20px;
+}
+.validation-num .error span{
+  color: var(--btn-color);
+}
+
+input:focus:not(:valid) {
+  /* background-image: url('../../images//charm_north-star.png'); */
+}
+
+input:focus:valid {
+  background: none !important;
+}

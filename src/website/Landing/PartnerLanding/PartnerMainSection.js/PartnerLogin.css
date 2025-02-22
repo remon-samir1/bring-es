@@ -1,0 +1,93 @@
+.partner-login {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #D6D6D6;
+  background-color: var(--bg-color);
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px 30px;
+  border-radius: 30px;
+  margin: 100px;
+  /* display: none; */
+}
+.partner-login h5 {
+  font-size: 1rem;
+}
+.partner-login .input-field {
+  border: 0.5px solid #D6D6D6;
+  /* width: max-content; */
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 15px 20px;
+}
+.partner-login .input-field input, .partner-login .input-field select {
+  border: none;
+  flex-grow: 1;
+  outline: none;
+  background-color: transparent;
+  background-image: url("../../../../images//charm_north-star.png");
+  background-repeat: no-repeat;
+  background-size: 9px;
+  background-position: 35%;
+}
+.partner-login .input-field select {
+  color: var(--text-color);
+  background-image: url("../../../../images//charm_north-star.png");
+  background-repeat: no-repeat;
+  background-size: 9px;
+  background-position: 35%;
+}
+.partner-login .names {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  /* flex-wrap: wrap; */
+}
+.partner-login .names input {
+  flex-grow: 1;
+  max-width: 140px;
+  background-image: url("../../../../images//charm_north-star.png");
+  background-repeat: no-repeat;
+  background-size: 9px;
+  background-position: 65%;
+}/*# sourceMappingURL=PartnerLogin.css.map */
+
+
+@media (max-width:992px) {
+  .partner-login {
+      position: absolute;
+      left: 41%;
+      top: 44%;
+  }
+  
+}
+@media (max-width : 768px){
+  .partner-login {
+    
+    position: absolute;
+    width: 380px;
+    left: 25%;
+    top: 75%;
+  }
+  .partner-login .names input {
+  width: 100px;
+  background-position: 75%;
+  background-size: 7px;
+
+
+  }
+  .partner-login input{
+    background-size: 7px !important;
+
+  }
+}

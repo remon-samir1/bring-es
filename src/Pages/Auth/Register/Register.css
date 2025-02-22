@@ -1,0 +1,149 @@
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.register .content {
+  background-color: #fff !important;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.register .logo img{
+  
+    width: 140px;
+  
+}
+
+.register .content .texts {
+  align-self: start;
+  margin-bottom: 20px;
+}
+
+.register .content h4 {
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+.register .content p {
+  font-size: 0.95rem;
+  color: var(--second-text-color);
+}
+
+.register .content form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.register .content form input {
+  background-color: var(--bg-color);
+  border: 0.5px solid #d6d6d6;
+  outline: none;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.register .content form .checkbox {
+  display: flex;
+  align-self: start;
+  gap: 10px;
+  margin-top: 0.8rem;
+}
+.register .content form .checkbox label {
+  color: var(--second-text-color);
+  font-size: 0.8rem;
+}
+.register .content form .checkbox input {
+  width: 15px;
+}
+.register .content form .checkbox input[type="checkbox"]:enabled:checked {
+  accent-color: var(--btn-color);
+}
+.register form .submit {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: var(--btn-color);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 0.8rem;
+}
+
+.register form .separetor {
+  color: var(--second-text-color);
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px;
+}
+.register form .separetor::before,
+.separetor::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  width: 80%;
+  background-color: var(--second-text-color);
+  margin: 0 20px;
+}
+.register .providers{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.register .providers a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.register .providers a img{
+  width: 2rem;
+}
+.register .providers a span{
+  color: var(--text-color);
+  font-size: 1rem;
+}
+.register form .have-account{
+  color: var(--second-text-color);
+  font-size: 0.8rem;
+  margin-top: 1rem;
+
+}
+.register form .have-account .link{
+  color: var(--btn-color);
+
+
+}
+.register .error{
+  align-self: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.register .error span{
+  color: var(--btn-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.register .error img{
+
+  width: 1.3rem;
+}
+.register .slider {
+  width: 50%;
+  height: 100vh;
+}
