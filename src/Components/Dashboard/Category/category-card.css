@@ -1,0 +1,20 @@
+.category-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: 1px solid #D6D6D6;
+  width: fit-content;
+  cursor: pointer;
+}
+.category-card img{
+  width: 50px;
+}
+.category-card h5{
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 500;
+}

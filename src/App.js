@@ -6,6 +6,7 @@ import Landing from "./website/Landing/UserLanding/Landing";
 import PartnerLanding from "./website/Landing/PartnerLanding/PartnerLanding";
 import UserDashboard from "./Dashboard/UserDashboard/UserDashboard";
 import SideBar from "./Dashboard/UserDashboard/SideBar/SideBar";
+import MainUserDashboard from "./Dashboard/UserDashboard/Main/MainUserDashboard";
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
 
       {/* user dashboard */}
       <Route path="/user-dashboard" element={<UserDashboard/>}>
-      
+      <Route path="main" element={<MainUserDashboard/>}/>
 
       </Route>
     </Routes>

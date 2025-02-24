@@ -1,0 +1,23 @@
+.GroceriesCard{
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding:0px 20px;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.GroceriesCard img{
+  width: 220px;
+}
+.GroceriesCard p{
+  font-size: 1.2em;
+  color: var(--text-color);
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.GroceriesCard:hover{
+  transform: translateY(-10px);
+}

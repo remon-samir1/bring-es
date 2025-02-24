@@ -1,0 +1,99 @@
+.ProductCard{
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.ProductCard .badges{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.ProductCard .badges .off{
+  background-color: var(--btn-color);
+  color: #fff;
+  text-align: center;
+  padding: 5px 15px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  position: relative;
+  left: -20px;
+  border-radius: 0 10px 10px 0;
+}
+.ProductCard .badges .fav{
+  cursor: pointer;
+}
+.ProductCard .img{
+  width: 100%;
+  text-align: center;
+}
+.ProductCard .img img{
+  width: 90%;
+}
+.ProductCard .stars{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+}
+.ProductCard .stars img{
+  width: 25px;
+}
+.ProductCard .details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.ProductCard .details .data .name{
+text-transform: capitalize;
+font-size: 0.9rem;
+color: var(--text-color);
+
+}
+.ProductCard .details .data .price{
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: -10px;
+color: var(--text-color);
+}
+.ProductCard .details .data .price span{
+  color: var(--btn-color);
+  margin-right: 2px;
+}
+.ProductCard .details .add{
+  background-color: var(--btn-color);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+  position: relative;
+}
+.ProductCard .details .add img{
+  /* width: 40px; */
+ transition: 1s;
+ position: absolute;
+
+}
+.ProductCard .details .add:hover img{
+ left: 50px;
+ transition: 1s;
+}
+.ProductCard .details .add::after{
+  content: url('../../../images/cartshop.png');
+  /* width: 10px !important;
+  height: 10px; */
+  
+  position: absolute;
+  top: 50%; left: -50%;
+  transform: translate(-50% , -50%) scale(0.08);
+}
+.ProductCard .details .add:hover::after{
+  left: 50%;
+  transition: 0.5s ease;
+}

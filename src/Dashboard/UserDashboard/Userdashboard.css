@@ -1,0 +1,8 @@
+.Userdashboard{
+  background-color: var(--bg-color);
+  display: flex;
+  
+}
+.Userdashboard .outlet{
+  flex: 1;
+}

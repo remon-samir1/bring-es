@@ -10,7 +10,7 @@ const CitiesWeServe = () => {
   return (
     <Container className='cities-section'>
       <h3>cities we serve in egypt</h3>
-      <div className="cities d-flex flex-wrap gap-4">
+      <div className="cities d-flex flex-wrap gap-4 justify-content-center">
       {citiesShow}
       </div>
     </Container>

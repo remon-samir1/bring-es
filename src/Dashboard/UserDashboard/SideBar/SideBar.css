@@ -1,0 +1,49 @@
+.sidebar{
+  width: 250px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.sidebar .links .link{
+  text-decoration: none;
+  display: flex;
+  width: 180px;
+  gap: 25px;
+  justify-content: start;
+  align-items: center;
+  margin-top: 15px;
+  padding: 10px ;
+  border-radius: 20px;
+  cursor: pointer;
+   transition: 0.5s;
+}
+.sidebar .links .link span{
+ color: var(--second-text-color);
+
+}
+
+.sidebar .links .link svg{
+ color: var(--second-text-color);
+ width:30px;
+ 
+}
+.sidebar .links .link:hover{
+  background-color: var(--btn-color);
+}
+.sidebar .links .link:hover span{
+  color: #fff;
+}
+.sidebar .links .link:hover svg path{
+  fill: #fff;
+}
+.sidebar .links .active{
+  background-color: var(--btn-color);
+}
+.sidebar .links .active span{
+  color: #fff;
+}
+.sidebar .links .active svg path{
+  fill: #fff;
+}
