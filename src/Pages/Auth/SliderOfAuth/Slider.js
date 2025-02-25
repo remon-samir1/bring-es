@@ -19,7 +19,7 @@ export default function SliderOfAuth() {
         spaceBetween={10}
         centeredSlides={true}
         autoplay={{
-          delay: 55500,
+          delay: 2500,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -38,14 +38,14 @@ export default function SliderOfAuth() {
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src={require("../../../images/food-slider1.png")}
+            src={require("../../../images/auth-slider2.png")}
             loading="lazy"
             alt="food-slider"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src={require("../../../images/food-slider1.png")}
+            src={require("../../../images/auth-slider3.png")}
             loading="lazy"
             alt="food-slider"
           />

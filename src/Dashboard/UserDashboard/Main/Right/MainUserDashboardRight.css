@@ -1,3 +1,67 @@
 .MainUserDashboardRight{
   width: 250px;
+  padding: 20px 10px;
+
+}
+.MainUserDashboardRight .icons{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  
+}
+.MainUserDashboardRight .icons img{
+ border-radius: 8px;
+ background-color: var(--primary-color);
+ padding: 5px;
+ cursor: pointer;
+
+}
+.MainUserDashboardRight .icons .user{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.MainUserDashboardRight .wallet{
+  margin-top: 20px;
+}
+.MainUserDashboardRight .wallet h3{
+  color: var(--text-color);
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+
+}
+.MainUserDashboardRight .wallet .ballance{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 95%;
+  margin: auto;
+  height: 165px;
+  background-image: url('../../../../images/wallet-card-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+.MainUserDashboardRight .wallet .ballance .text{
+ text-align: center;
+ background-color: #fff;
+ padding: 10px 30px;
+ border-radius: 10px ;
+ line-height: 10px;
+}
+.MainUserDashboardRight .wallet .ballance .text .header{
+  color: var(--text-color);
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.MainUserDashboardRight .wallet .ballance .text .price{
+  color: var(--text-color);
+  font-size: 1.3rem;
+  font-weight: 600;
+
 }

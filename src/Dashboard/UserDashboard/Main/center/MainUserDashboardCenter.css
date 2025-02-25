@@ -9,7 +9,7 @@
 .MainUserDashboardCenter .header .text h4{
 color: var(--text-color);
 font-size: 2rem;
-margin-bottom: 10px;
+margin-bottom: 5px;
 }
 .MainUserDashboardCenter .header .text p{
   color: var(--text-color);
