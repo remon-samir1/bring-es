@@ -31,7 +31,7 @@ export default function SliderOfAuth() {
       >
         <SwiperSlide>
           <img
-            src={require("../../../images/food-slider1.png")}
+            src={require("../../../images/delicious-burger-with-fresh-ingredients 1.png")}
             loading="lazy"
             alt="food-slider"
           />
