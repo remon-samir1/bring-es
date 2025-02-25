@@ -1,10 +1,12 @@
 import React from "react";
 import "./MainUserDashboardCenter.css";
 import { Link } from "react-router-dom";
-import CategoryCard from "../../../../Components/Dashboard/Category/CategoryCard";
+import CategoryCard from "../../../../Components/Dashboard/UserDashboard/Category/CategoryCard";
 import ProductsContainer from "./Products-Container/ProductsContainer";
-import ProductCard from "../../../../Components/Dashboard/Product/ProductCard";
-import GroceriesCard from "../../../../Components/Dashboard/Groceries/GroceriesCard";
+import ProductCard from "../../../../Components/Dashboard/UserDashboard/Product/ProductCard";
+import GroceriesCard from "../../../../Components/Dashboard/UserDashboard/Groceries/GroceriesCard";
+import RecentOrder from "../../../../Components/Dashboard/UserDashboard/RecentOrder/RecentOrder";
+import Restaurant from "../../../../Components/Dashboard/UserDashboard/Restaurant/Restaurant";
 const MainUserDashboardCenter = () => {
   return (
     <div className="MainUserDashboardCenter px-2">
@@ -48,8 +50,6 @@ const MainUserDashboardCenter = () => {
         </div>
       </div>
 
-    
-
       <ProductsContainer
         header="Category"
         data={
@@ -71,7 +71,6 @@ const MainUserDashboardCenter = () => {
             <ProductCard />
             <ProductCard />
             <ProductCard />
-            
           </div>
         }
       />
@@ -82,8 +81,26 @@ const MainUserDashboardCenter = () => {
             <GroceriesCard />
             <GroceriesCard />
             <GroceriesCard />
-          
-            
+          </div>
+        }
+      />
+      <ProductsContainer
+        header="Recent Order"
+        data={
+          <div className="d-flex justify-content-between">
+            <RecentOrder />
+            <RecentOrder />
+            <RecentOrder />
+          </div>
+        }
+      />
+      <ProductsContainer
+        header="Recent Order"
+        data={
+          <div className="d-flex justify-content-between">
+            <Restaurant />
+            <Restaurant />
+            <Restaurant />
           </div>
         }
       />

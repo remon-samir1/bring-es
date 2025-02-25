@@ -1,5 +1,5 @@
 import React from 'react';
-import CategoryCard from '../../../../../Components/Dashboard/Category/CategoryCard';
+import CategoryCard from '../../../../../Components/Dashboard/UserDashboard/Category/CategoryCard';
 import { Link } from 'react-router-dom';
 import './ProductsContainer.css'
 const ProductsContainer = (props) => {

@@ -7,7 +7,7 @@ const ProductCard = () => {
         <div className="off">15% off</div>
         <div className="fav">
           <img
-            src={require("../../../images/fav.png")}
+            src={require("../../../../images/fav.png")}
             alt="favourite"
             loading="lazy"
           />
@@ -15,34 +15,34 @@ const ProductCard = () => {
       </div>
       <div className="img">
         <img
-          src={require("../../../images/fresh-tasty-burger.png")}
+          src={require("../../../../images/fresh-tasty-burger.png")}
           alt="food"
           loading="lazy"
         />
       </div>
       <div className="stars">
         <img
-          src={require("../../../images/gold-star.png")}
+          src={require("../../../../images/gold-star.png")}
           alt="gold-star"
           loading="lazy"
         />
         <img
-          src={require("../../../images/gold-star.png")}
+          src={require("../../../../images/gold-star.png")}
           alt="gold-star"
           loading="lazy"
         />
         <img
-          src={require("../../../images/gold-star.png")}
+          src={require("../../../../images/gold-star.png")}
           alt="gold-star"
           loading="lazy"
         />
         <img
-          src={require("../../../images/gold-star.png")}
+          src={require("../../../../images/gold-star.png")}
           alt="gold-star"
           loading="lazy"
         />
         <img
-          src={require("../../../images/gold-star.png")}
+          src={require("../../../../images/gold-star.png")}
           alt="gold-star"
           loading="lazy"
         />
@@ -56,7 +56,7 @@ const ProductCard = () => {
         </div>
         <div className="add">
           <img
-            src={require("../../../images/plus.png")}
+            src={require("../../../../images/plus.png")}
             alt="plus"
             loading="lazy"
           />
