@@ -1,0 +1,114 @@
+.OrderMenu{
+  margin-top: 20px;
+  width: 100%;
+}
+.OrderMenu .orders{
+padding: 10px 5px;
+ border-bottom: 1px solid #D6D6D6;
+}
+.OrderMenu .orders .order{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.OrderMenu .orders .order .data{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.OrderMenu .orders .order img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+}
+.OrderMenu .orders .order .data .details{
+  margin-top: 10px;
+}
+.OrderMenu .orders .order .data .details .name{
+  line-height: 5px;
+  font-size: 0.8rem;
+  
+}
+.OrderMenu .orders .order .data .details .count{
+  line-height: 3px;
+  font-size: 0.6rem;
+}
+.OrderMenu .orders .order .price{
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.OrderMenu .orders .order .price span{
+  color: var(--btn-color);
+}
+.OrderMenu .services .service{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.OrderMenu .services .service p:first-child{
+  color: var(--second-text-color);
+  font-size: 0.9rem;
+}
+.OrderMenu .services .service .price{
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.OrderMenu .services .service .price span{
+  color: var(--btn-color);
+
+}
+.OrderMenu .services .total{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.OrderMenu .services .total p:first-child{
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.OrderMenu .services .total .price{
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.OrderMenu .services .total .price span{
+  color: var(--btn-color);
+
+}
+.OrderMenu .btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.OrderMenu .btns .coupon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--btn-color);
+  outline: none;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 10px 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+  gap: 5px;
+width: 100%;
+}
+.OrderMenu .btns .coupon img{
+  width: 30px;
+}
+.OrderMenu .btns .checkout{
+  width: 100%;
+  padding: 13px;
+  border-radius: 10px;
+  margin-top: 10px;
+  flex: 1;
+}

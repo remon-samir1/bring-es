@@ -25,7 +25,7 @@
 .MainUserDashboardRight .wallet{
   margin-top: 20px;
 }
-.MainUserDashboardRight .wallet h3{
+.MainUserDashboardRight h3{
   color: var(--text-color);
   font-size: 1.4rem;
   font-weight: 500;
@@ -64,4 +64,64 @@
   font-size: 1.3rem;
   font-weight: 600;
 
+}
+.MainUserDashboardRight .address{
+  margin-top: 20px;
+}
+.MainUserDashboardRight .address .data{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.MainUserDashboardRight .address .data div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+.MainUserDashboardRight .address .data div img{
+  width: 20px;
+}
+.MainUserDashboardRight .address .data button{
+  border: 1px solid var(--btn-color);
+  border-radius: 20px;
+  color: var(--btn-color);
+  padding: 2px 5px;
+  font-size: 0.7rem;
+  background-color: #fff;
+  outline: none;
+  transition: 0.7s;
+}
+
+.MainUserDashboardRight .address .data button:hover{
+  background-color: var(--btn-color);
+  color: #fff;
+}
+.MainUserDashboardRight .address p{
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: var(--second-text-color);
+
+}
+.MainUserDashboardRight .adds{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.MainUserDashboardRight .adds button{
+  border: 1px solid #474747;
+  color: #333333;
+  background-color: #fff;
+  font-size: 0.7rem;
+  padding: 3px 15px;
+  border-radius: 20px;
+  text-transform: capitalize;
+  transition: 0.7s;
+}
+.MainUserDashboardRight .adds button:hover{
+  background-color: #474747;
+  color: #fff;
 }
