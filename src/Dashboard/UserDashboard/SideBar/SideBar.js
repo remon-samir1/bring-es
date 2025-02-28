@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./SideBar.css";
 import Logo from "../../../Components/Logo";
 import {  NavLink } from "react-router-dom";
+import { useGSAP } from "@gsap/react";
+import { gsap } from "gsap";
 const SideBar = () => {
+  const sidebarRef = useRef(null)
+  useGSAP(()=>{
+    gsap.from(sidebarRef.current,{
+      x:-30,
+      opacity:0,
+      duration:1
+    })
+  })
   return (
-    <div className="sidebar">
+    <div className="sidebar" ref={sidebarRef}>
       <div className="logo mt-3">
         <Logo width="150px" />
       </div>

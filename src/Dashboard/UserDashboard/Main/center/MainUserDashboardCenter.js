@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./MainUserDashboardCenter.css";
 import { Link } from "react-router-dom";
 import CategoryCard from "../../../../Components/Dashboard/UserDashboard/Category/CategoryCard";
@@ -7,9 +7,27 @@ import ProductCard from "../../../../Components/Dashboard/UserDashboard/Product/
 import GroceriesCard from "../../../../Components/Dashboard/UserDashboard/Groceries/GroceriesCard";
 import RecentOrder from "../../../../Components/Dashboard/UserDashboard/RecentOrder/RecentOrder";
 import Restaurant from "../../../../Components/Dashboard/UserDashboard/Restaurant/Restaurant";
+import { useGSAP } from "@gsap/react";
+import { gsap } from "gsap";
 const MainUserDashboardCenter = () => {
+  const centerRef = useRef(null)
+  const offerRef = useRef(null)
+  useGSAP(()=>{
+    gsap.from(centerRef.current,{
+      y:30,
+      opacity:0,
+      duration:1
+    })
+
+    gsap.from(offerRef.current,{
+      y:-30,
+
+      duration:1,
+  
+    })
+  })
   return (
-    <div className="MainUserDashboardCenter px-2">
+    <div className="MainUserDashboardCenter px-2" ref={centerRef}>
       <div className="header mt-4">
         <div className="text">
           <h4>Hello, Noura</h4>
@@ -33,7 +51,7 @@ const MainUserDashboardCenter = () => {
         </div>
       </div>
 
-      <div className="offer">
+      <div className="offer" ref={offerRef}>
         <div className="text">
           <h4>Get Discount Voucher Up To 20% </h4>
           <p>

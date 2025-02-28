@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./MainUserDashboardRight.css";
 import OrderMenu from "./OrderMenu/OrderMenu";
+import { useGSAP } from "@gsap/react";
+import { gsap } from "gsap";
 const MainUserDashboardRight = () => {
+  const rightRef = useRef(null)
+  useGSAP(()=>{
+    gsap.from(rightRef.current,{
+      x:30,
+      opacity:0,
+      duration:1
+    })
+  })
   return (
-    <div className="MainUserDashboardRight">
+    <div className="MainUserDashboardRight" ref={rightRef}>
       <div className="icons">
         <img
           src={require("../../../../images/notification.png")}
