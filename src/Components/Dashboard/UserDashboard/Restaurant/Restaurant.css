@@ -61,6 +61,7 @@
 .Restaurant .data .second .space span {
   font-size: 0.8rem;
   color: var(--btn-color);
+  white-space: nowrap;
 }
 .Restaurant .data .second .delivery {
   font-size: 0.8rem;
