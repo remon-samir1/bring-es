@@ -14,9 +14,7 @@ const Users = () => {
           </div>
           <span>5m</span>
         </div>
-        <p className="message">
-          Lorem ipsum dolor sit amet.
-        </p>
+      
       </div>
       <div className="user">
         <div className="user-data">
@@ -29,9 +27,7 @@ const Users = () => {
           </div>
           <span>5m</span>
         </div>
-        <p className="message">
-          Lorem ipsum dolor sit amet.
-        </p>
+      
       </div>
       <div className="user">
         <div className="user-data">
@@ -44,9 +40,7 @@ const Users = () => {
           </div>
           <span>5m</span>
         </div>
-        <p className="message">
-          Lorem ipsum dolor sit amet.
-        </p>
+    
       </div>
       <div className="user">
         <div className="user-data">
@@ -59,9 +53,7 @@ const Users = () => {
           </div>
           <span>5m</span>
         </div>
-        <p className="message">
-          Lorem ipsum dolor sit amet.
-        </p>
+      
       </div>
 
     </div>

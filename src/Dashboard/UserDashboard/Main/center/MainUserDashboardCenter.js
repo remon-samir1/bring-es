@@ -71,7 +71,7 @@ const MainUserDashboardCenter = () => {
       <ProductsContainer
         header="Category"
         data={
-          <div className="d-flex justify-content-between">
+          <div className="d-flex justify-content-center gap-3">
             <CategoryCard />
             <CategoryCard />
             <CategoryCard />
@@ -85,7 +85,7 @@ const MainUserDashboardCenter = () => {
       <ProductsContainer
         header="Populer Foods"
         data={
-          <div className="d-flex justify-content-between">
+          <div className="d-flex justify-content-center gap-3">
             <ProductCard />
             <ProductCard />
             <ProductCard />
@@ -95,7 +95,7 @@ const MainUserDashboardCenter = () => {
       <ProductsContainer
         header="Best groceries"
         data={
-          <div className="d-flex justify-content-between">
+          <div className="d-flex justify-content-center gap-3">
             <GroceriesCard />
             <GroceriesCard />
             <GroceriesCard />
@@ -105,7 +105,7 @@ const MainUserDashboardCenter = () => {
       <ProductsContainer
         header="Recent Order"
         data={
-          <div className="d-flex justify-content-between">
+          <div className="d-flex justify-content-center gap-3">
             <RecentOrder />
             <RecentOrder />
             <RecentOrder />
@@ -115,7 +115,7 @@ const MainUserDashboardCenter = () => {
       <ProductsContainer
         header="Recent Order"
         data={
-          <div className="d-flex justify-content-between">
+          <div className="d-flex justify-content-center gap-3">
             <Restaurant />
             <Restaurant />
             <Restaurant />

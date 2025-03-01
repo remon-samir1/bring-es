@@ -118,8 +118,8 @@ width: 35px;
 }
 .MainUserDashboardCenter .categories .category-container{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 5px;
-  margin-top: 15px;
+  gap: 10px;
+  margin-top: 10px;
 }
