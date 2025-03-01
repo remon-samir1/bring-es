@@ -39,7 +39,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   border-left: 1px solid #D6D6D6;
   padding:0px 10px;
   color: var(--btn-color);
@@ -50,10 +50,10 @@
   border-radius: 50%;
 }
 .MessageHeader .user .text .name{
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
 }
 .MessageHeader .user .text .name{
-  font-weight: 0.9rem;
+  font-weight: 0.8rem;
   
 }
