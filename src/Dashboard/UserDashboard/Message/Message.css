@@ -1,0 +1,9 @@
+.Message{
+  padding: 20px;
+}
+.Message .data{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}

@@ -1,0 +1,59 @@
+.MessageHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.MessageHeader .main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.MessageHeader .main h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.MessageHeader .search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+   border: 1px solid #D6D6D6;
+   background-color: #fff;
+   padding:5px 20px;
+   border-radius: 45px;
+   width: 450px;
+}
+.MessageHeader .search img{
+  width: 35px;
+}
+.MessageHeader .search input{
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+.MessageHeader .user{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-left: 1px solid #D6D6D6;
+  padding:0px 10px;
+  color: var(--btn-color);
+}
+.MessageHeader .user img{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+.MessageHeader .user .text .name{
+  font-size: 1rem;
+  font-weight: 600;
+}
+.MessageHeader .user .text .name{
+  font-weight: 0.9rem;
+  
+}

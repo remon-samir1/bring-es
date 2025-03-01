@@ -1,0 +1,61 @@
+.Users{
+  width: 300px;
+  background-color: #fff;
+  filter: drop-shadow(1px 1px 2px #0000001F);
+  border-radius: 10px;
+}
+.Users .user{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px 20px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.Users .user .user-data p:hover{
+  color: #fff;
+}
+.Users .user .user-data{
+ display: flex;
+ justify-content: center;
+ align-items: start;
+ gap: 20px;
+}
+.Users .user .user-data img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  
+}
+.Users .user .user-data .text{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+
+}
+.Users .user .user-data .text .name{
+  font-size: 0.9rem;
+  
+  color: var(--text-color);
+  line-height: 15px;
+  margin-top: 5px;
+}
+.Users .user .user-data .text .desc{
+  font-size: 0.8rem;
+  color: var(--second-text-color);
+  line-height: 0px;
+
+}
+.Users .user .user-data span{
+  font-size: 0.9rem;
+  color: var(--second-text-color);
+}
+.Users .message{
+  font-size: 0.8rem;
+  color: var(--second-text-color);
+}

@@ -104,7 +104,7 @@ const SideBar = () => {
           </div>
           <span>Favourite</span>
         </NavLink>
-        <NavLink to='/' className="link">
+        <NavLink to='message' className="link">
           <div className="img">
             <svg
               width="40"
