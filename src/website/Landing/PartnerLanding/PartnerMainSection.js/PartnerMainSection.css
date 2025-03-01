@@ -5,9 +5,7 @@
   text-align: center;
   background-color: var(--bg-color);
 }
-.PartnerMainSection .container {
-  /* margin-right: 0 !important; */
-}
+
 .PartnerMainSection .main {
   display: flex;
   align-items: center;
@@ -16,7 +14,7 @@
   gap: 100px;
 }
 .PartnerMainSection .main .contant {
-  max-width: 600px;
+  max-width: 550px;
   text-align: start;
   margin-bottom: 150px;
 }
@@ -69,7 +67,8 @@
     width: 95vw !important;
   }
   .PartnerMainSection .main .contant .partners-withus {
-    text-align: center;
+  display: none;
+
   }
  
 }
@@ -89,14 +88,18 @@
 
   }
   .PartnerMainSection .main .contant .partners-withus {
+    display: block;
     width: max-content;
     position: relative;
     z-index: 100;
-    top: 300px;
+    top: 340px;
     padding-left: 0;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: start;
+  }
+  .PartnerMainSection .main .contant .partners-withus img{
+    width:280px;
   }
   .PartnerMainSection .main .contant h2 {
 
