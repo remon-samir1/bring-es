@@ -31,7 +31,7 @@ const PartnerLogin = (props) => {
         props.setLoad(true);
 
         const res = await axios.post(
-          "https://bring-es.minaboules.com/api/auth/partner",
+          "https://bring-es.minaboules.com/api/partner",
           form
         );
         props.setLoad(false);
