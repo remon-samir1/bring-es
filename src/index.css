@@ -52,6 +52,6 @@ button {
   border-radius: 6px;
  }
  ::-webkit-scrollbar-thumb{
-  background:#9e052999;
+  background:gray;
   border-radius: 6px;
  }

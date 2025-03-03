@@ -16,7 +16,7 @@ const SideBar = () => {
   return (
     <div className="sidebar" ref={sidebarRef}>
       <div className="logo mt-3">
-        <Logo width="150px" />
+        <Logo width="150px" to="/" />
       </div>
       <div className="links">
         <NavLink to='/user-dashboard/main' className="link">

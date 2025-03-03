@@ -26,6 +26,7 @@
 .Chat {
   flex: 1;
   margin: 0px 10px;
+  
 }
 .Chat .chat-container {
   display: flex;
@@ -148,3 +149,4 @@ padding: 20px 25px;
 .Chat .chat-container .chat-input img{
   cursor: pointer;
 }
+

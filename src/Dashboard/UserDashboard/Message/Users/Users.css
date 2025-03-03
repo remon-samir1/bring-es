@@ -3,6 +3,8 @@
   background-color: #fff;
   filter: drop-shadow(1px 1px 2px #0000001F);
   border-radius: 10px;
+  position: sticky;
+  top: 10px;
 }
 .Users .user{
   display: flex;
