@@ -105,7 +105,7 @@ const MainUserDashboardCenter = () => {
       <ProductsContainer
         header="Recent Order"
         data={
-          <div className="d-flex justify-content-center gap-3">
+          <div className="d-flex justify-content-center gap-5">
             <RecentOrder />
             <RecentOrder />
             <RecentOrder />
