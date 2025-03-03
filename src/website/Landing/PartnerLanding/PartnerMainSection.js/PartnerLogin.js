@@ -99,7 +99,7 @@ const PartnerLogin = (props) => {
             <option value="" selected disabled style={{ color: "gray" }}>
               Business type
             </option>
-            <option value="resturant">Resturant</option>
+            <option value="restaurant">Restaurant</option>
             <option value="shop">Shop</option>
           </select>
         </div>
