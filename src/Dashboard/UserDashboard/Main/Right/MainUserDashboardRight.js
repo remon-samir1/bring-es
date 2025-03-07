@@ -1,17 +1,19 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./MainUserDashboardRight.css";
 import OrderMenu from "./OrderMenu/OrderMenu";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
+
 const MainUserDashboardRight = () => {
-  const rightRef = useRef(null)
-  useGSAP(()=>{
-    gsap.from(rightRef.current,{
-      x:30,
-      opacity:0,
-      duration:1
-    })
-  })
+  const rightRef = useRef(null);
+  const [show,setShow] =useState(false)
+  useGSAP(() => {
+    gsap.from(rightRef.current, {
+      x: 30,
+      opacity: 0,
+      duration: 1,
+    });
+  });
   return (
     <div className="MainUserDashboardRight" ref={rightRef}>
       <div className="icons">
@@ -67,7 +69,7 @@ const MainUserDashboardRight = () => {
           <button>add notes</button>
         </div>
       </div>
-      <OrderMenu/>
+      <OrderMenu />
     </div>
   );
 };

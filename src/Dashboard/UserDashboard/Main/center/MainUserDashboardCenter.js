@@ -71,7 +71,7 @@ const MainUserDashboardCenter = () => {
       <ProductsContainer
         header="Category"
         data={
-          <div className="d-flex justify-content-center gap-3">
+          <div className="d-flex justify-content-center gap-3 ">
             <CategoryCard />
             <CategoryCard />
             <CategoryCard />

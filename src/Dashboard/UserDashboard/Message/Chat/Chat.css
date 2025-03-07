@@ -128,7 +128,7 @@ margin-top: 10px;
   align-self: flex-end;
 } 
 .own .message-data{
- background-color: #B13754 !important;
+ background-color: var(--btn-color) !important;
 }
 .Chat .chat-container .chat-input{
 display: flex;

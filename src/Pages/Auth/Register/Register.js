@@ -9,6 +9,8 @@ import { Link, useNavigate } from "react-router-dom";
 import Loading from "../../../Components/Loading/Loading";
 import { toast } from "react-toastify";
 import Notifcation from "../../../Components/Notification";
+import { doc, setDoc } from "firebase/firestore";
+import { db } from "../../../Components/lib/firebase";
 const Register = () => {
   // state
   const [inpuType, setInpuType] = useState(true);
@@ -48,17 +50,26 @@ const Register = () => {
       if ((inpuType && validNum) || !inpuType) {
         const res = await Axios.post(`auth/register`, form);
         const token = res.data.data.access_token;
+
         cookie.set("token", token);
         setLaoding(false);
-        nav("/");
+        // nav("/");
         console.log(res);
         console.log(token);
+
+        
+        // await setDoc(doc(db, "user", "LA"), {
+        //   name: "Los Angeles",
+        //   state: "CA",
+        //   country: "USA"
+        // });
       }
     } catch (err) {
       setLaoding(false);
       setError(true);
-      if (err.response.status == 422) {
+      if (err.response.status == 422 && err) {
         toast.error(`${err.response.data.data.email_or_phone[0]}`);
+        console.log(err);
       } else {
         toast.error("Internal server error");
       }

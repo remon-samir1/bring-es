@@ -1,7 +1,8 @@
 import { initializeApp } from "firebase/app";
+import {getFirestore} from 'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_API_KEY,
+  apiKey: "AIzaSyDN1kHvDIi_Nsnp6yaiJWZBcyENzhkgswY",
   authDomain: "kirvomart.firebaseapp.com",
   projectId: "kirvomart",
   storageBucket: "kirvomart.firebasestorage.app",
@@ -10,3 +11,5 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+
+export const db = getFirestore();

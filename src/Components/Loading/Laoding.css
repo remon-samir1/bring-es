@@ -10,3 +10,8 @@
   align-items: center;
   z-index: 999;
 }/*# sourceMappingURL=Laoding.css.map */
+@media (max-width: 700px) {
+  .Loading{
+    height: 200vh;
+  }
+}

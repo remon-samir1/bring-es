@@ -45,7 +45,7 @@ const HeroSection = () => {
             className="arrow"
           />
         </div>
-        <div className="layout">
+        <div className="layout ">
           <img
             src={require("../../../../images/BackgroundContainer-fotor.png")}
             alt=""

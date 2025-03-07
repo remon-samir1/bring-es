@@ -1,6 +1,12 @@
 import React from "react";
 import "./OrderMenu.css";
+import Cart from "../../../Cart/Cart";
+import { useState } from "react";
 const OrderMenu = () => {
+    const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <div className="OrderMenu">
       <h3>order menu</h3>
@@ -78,7 +84,8 @@ const OrderMenu = () => {
           <img src={require('../../../../../images/chevron-down .png')} alt="icon" loading="lazy" />
 
         </button>
-        <button className="checkout Button">Check Out</button>
+        <button className="checkout Button" onClick={handleShow}>Check Out</button>
+        <Cart handleShow={handleShow} show={show} handleClose={handleClose} />
       </div>
     </div>
   );
