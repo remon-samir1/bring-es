@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const CardInfo = (props) => {
   return (
-    <div className={`cardinfo ${props.class} ${props.order} `} style={{height: props.height && props.height}}>
+    <div ref={props.ref} className={`cardinfo ${props.order} `} style={{height: props.height && props.height}}>
       <div className='card-data'>
 
       <div className="image ">

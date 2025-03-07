@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./WhyChooseUs.css";
 
 import CardInfo from "./CardInfo";
@@ -14,10 +14,13 @@ import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 const WhyChooseUs = () => {
+  const box1 = useRef(null)
+  const box2 = useRef(null)
+  const box3 = useRef(null)
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
   
-    gsap.from(".class1", {
+    gsap.from(box1.current, {
       x: -60,
       duration: 1,
       scrollTrigger: {
@@ -27,7 +30,7 @@ const WhyChooseUs = () => {
         start: "top 50%",
       },
     });
-    gsap.from(".class2", {
+    gsap.from(box2.current, {
       y: 60,
       duration: 1,
       scrollTrigger: {
@@ -37,7 +40,7 @@ const WhyChooseUs = () => {
         start: "top 50%",
       },
     });
-    gsap.from(".class3", {
+    gsap.from(box3.current, {
       x: 60,
       // opacity:0,
       duration: 1,
@@ -87,7 +90,7 @@ const WhyChooseUs = () => {
               head="The Best Stores"
               description="Explore a selection of top-rated stores offering high-quality products to meet all your needs"
               image="stores.png"
-              class="class1"
+              ref={box1}
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -98,7 +101,8 @@ const WhyChooseUs = () => {
               image="delivery.png"
               height="440px"
               btn
-              class="class2"
+              ref={box2}
+
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -107,7 +111,8 @@ const WhyChooseUs = () => {
               head="Quick Support"
               description="support to solve your problems and answer your questions with professionalism"
               image="quicksupport.png"
-              class="class3"
+              ref={box3}
+
             />{" "}
           </SwiperSlide>
         </Swiper>
