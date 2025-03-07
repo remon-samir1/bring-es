@@ -122,18 +122,75 @@ font-size: 0.9rem;
   display: flex;
   justify-content: start;
   align-items: center;
+  margin-top: 20px;
+  gap: 15px;
 }
-.offcanvas-body .services svg path{
-  fill:var(--btn-color);
 
-}
-.offcanvas-body .services svg{
-  /* padding: 5px 10px; */
-  width: 80px;
-  height: 70px;
-  padding: 10px;
-  border-radius: 10px;
+.offcanvas-body .services .img{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 5px;
   background-color: var(--primary-color);
 }
-.offcanvas-body .services{}
-.offcanvas-body .services{}
+.offcanvas-body .services img{
+
+  width: 40px;
+  height: 40px;
+}
+.offcanvas-body .services .name{
+  font-size: 1rem;
+  color: var(--second-text-color);
+}
+.offcanvas-body .services .price{
+  margin-bottom: 0;
+  font-size: 0.9rem;
+
+}
+.offcanvas-body .services .price span{
+  color: var(--btn-color);
+}
+.offcanvas-body .coupon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--btn-color);
+  outline: none;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 10px 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+  gap: 5px;
+width: 100%;
+margin-top: 20px;
+}
+.offcanvas-body .coupon:hover{
+  background-color: var(--btn-color);
+  color: #fff;
+  transition: 0.7s;
+
+}
+.offcanvas-body .coupon img{
+  width: 30px;
+
+}
+.offcanvas-body .checkout{
+  width: 100%;
+  padding: 13px;
+  border-radius: 50px;
+  margin-top: 20px;
+  flex: 1;
+  align-self: flex-end;
+  text-decoration: none;
+  transition: 0.7s;
+  text-align: center;
+}
+.offcanvas-body .checkout:hover{
+  background-color: #fff;
+  color: var(--btn-color);
+  border: 1px solid var(--btn-color);
+}
