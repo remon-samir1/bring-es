@@ -1,0 +1,91 @@
+.ByVisa .addCart .header {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin: 10px 0;
+}
+.ByVisa .addCart form {
+  background-color: #f5f5f5;
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 20px;
+}
+.ByVisa .addCart form input {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px;
+  
+}
+.ByVisa .addCart form input:focus{
+  background-color: #fff !important;
+
+}
+.ByVisa .addCart .input-container input{
+  width: 80%;
+
+}
+.ByVisa .addCart .card-number input{
+  border-left: 4px solid var(--btn-color);
+}
+.ByVisa .addCart .input-container label{
+  font-size: 1.1rem;
+  color: var(--text-color);
+  font-weight: 400;
+  margin: 5px 0;
+}
+.ByVisa .addCart .input-container{
+  display: flex;
+  justify-content:start;
+  align-items: start;
+  flex-direction: column;
+  gap: 5px;
+ padding: 0;
+  width: 100%;
+
+}
+.ByVisa .addCart .details{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  
+}
+.ByVisa .addCart .details .cvc{
+  width: 180px;
+  align-items: end;
+}
+
+
+
+.ByVisa .addCart .checkbox {
+  display: flex;
+  align-self: start;
+  gap: 10px;
+  margin-top: 0.8rem;
+}
+.ByVisa .addCart .checkbox label {
+  color: var(--text-color);
+  font-size: 1.1rem;
+}
+.ByVisa .addCart .checkbox input {
+  width: 15px;
+}
+.ByVisa .addCart .checkbox input[type="checkbox"]:enabled:checked {
+  accent-color: var(--btn-color);
+}
+
+.ByVisa .addCart .Button{
+  margin-top: 50px;
+  padding: 10px 50px;
+  transition: 0.3s;
+}
+.ByVisa .addCart .Button:hover{
+  background-color: #fff;
+  font-weight: 600;
+  color: var(--btn-color);
+  border: 1px solid var(--btn-color);
+}

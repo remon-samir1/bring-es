@@ -8,6 +8,11 @@
   padding: 20px;
   color: #fff;
   border-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.RecentCart:hover{
+transform: scale(0.98);
 }
 .RecentCart .cart {
   display: flex;

@@ -12,16 +12,10 @@ const RecentCart = () => {
         />
         <div className="details">
           <div>
-            <p className="name">
-              Remon Samir
-            </p>
-            <p className="cvc">
-              03/26
-            </p>
+            <p className="name">Remon Samir</p>
+            <p className="cvc">03/26</p>
           </div>
-          <div className="number">
-          3254   5214   2541   2154
-          </div>
+          <div className="number">3254 5214 2541 2154</div>
         </div>
       </div>
     </div>
