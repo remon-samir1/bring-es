@@ -12,7 +12,7 @@ const HowWork = () => {
         </p>
       </div>
       <div className="cards">
-        <HowWorkCard description='Customer places the order from bringses application' header='Customer Orders Food' image='CustomerOrdersFood.png'/>
+        <HowWorkCard description='Lorem Ipsum Dolor Sit Amet Consectetur. Odio Cras Cras Facilisis Fermentum.' header='Customer Orders Food' image='CustomerOrdersFood.png'/>
         <HowWorkCard description="Lorem ipsum dolor sit amet consectetur. Odio cras cras facilisis fermentum." header='Preparing order' image='Preparingorder.png' />
         <HowWorkCard description="Lorem ipsum dolor sit amet consectetur. Odio cras cras facilisis fermentum." header='Our delivery' image='cuate.png' />
         <HowWorkCard description="Lorem ipsum dolor sit amet consectetur. Odio cras cras facilisis fermentum." header='Growth your business' image='Growthyourbusiness.png' />

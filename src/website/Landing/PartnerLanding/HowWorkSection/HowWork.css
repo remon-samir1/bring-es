@@ -1,6 +1,7 @@
 .HowWork {
   width: 100%;
   margin-bottom: 100px;
+  
 }
 .HowWork .content {
   text-align: center;
@@ -29,13 +30,13 @@
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap !important;
-  height: max-content;
+  
+  /* height: max-content; */
 }
 .HowWork .HowWorkCard {
   border-radius: 20px;
   filter: drop-shadow(1px 1px 10px rgba(80, 77, 77, 0.0901960784));
   background-color: #F9F9F9;
-  height: 200px;
 }
 .HowWork .HowWorkCard .card-icon {
   background-color: var(--bg-color);
@@ -69,7 +70,7 @@
 }
 @media (max-width: 600px) {
   .HowWork{
-    margin-top: 200px;
+    /* margin-top: 200px; */
   }
   .HowWork .content h3 {
     white-space: normal;
