@@ -8,6 +8,8 @@ import UserDashboard from "./Dashboard/UserDashboard/UserDashboard";
 import SideBar from "./Dashboard/UserDashboard/SideBar/SideBar";
 import MainUserDashboard from "./Dashboard/UserDashboard/Main/MainUserDashboard";
 import Message from "./Dashboard/UserDashboard/Message/Message";
+import Payment from "./Dashboard/UserDashboard/Payment/Payment";
+import ByVisa from "./Dashboard/UserDashboard/Payment/ByVisa/ByVisa";
 
 
 function App() {
@@ -22,6 +24,10 @@ function App() {
       {/* user dashboard */}
       <Route path="/user-dashboard" element={<UserDashboard/>}>
       <Route path="main" element={<MainUserDashboard/>}/>
+      <Route path="main/payment" element={<Payment/>}>
+      <Route path="visa" element={<ByVisa/>}/>
+        
+      </Route>
       <Route path="message" element={<Message/>}/>
 
       </Route>

@@ -3,6 +3,7 @@ import "./MainUserDashboardRight.css";
 import OrderMenu from "./OrderMenu/OrderMenu";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
+import Icons from "./Icons";
 
 const MainUserDashboardRight = () => {
   const rightRef = useRef(null);
@@ -16,28 +17,7 @@ const MainUserDashboardRight = () => {
   });
   return (
     <div className="MainUserDashboardRight" ref={rightRef}>
-      <div className="icons">
-        <img
-          src={require("../../../../images/notification.png")}
-          alt="icon"
-          loading="lazy"
-        />
-        <img
-          src={require("../../../../images/message-icon.png")}
-          alt="icon"
-          loading="lazy"
-        />
-        <img
-          src={require("../../../../images/settinges-icon.png")}
-          alt="icon"
-          loading="lazy"
-        />
-        <img
-          src={require("../../../../images/placeholder.png")}
-          alt="user"
-          className="user"
-        />
-      </div>
+    <Icons/>
       <div className="wallet">
         <h3>your wallet</h3>
         <div className="ballance">

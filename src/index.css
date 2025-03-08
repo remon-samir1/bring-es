@@ -36,6 +36,9 @@ button {
   border-radius: 30px;
 }
 
+p{
+  margin-bottom: 0;
+}
 @media (max-width: 900px) {
   html,
   body {

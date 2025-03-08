@@ -1,0 +1,47 @@
+.Payment{
+display: flex;
+justify-content: center;
+align-items: start;
+}
+.Payment .center{
+  flex: 1;
+}
+.Payment .center .header h3{
+ color: var(--text-color);
+ font-size: 1.7rem;
+}
+.Payment .center .header .links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.Payment .center .header .links .navlink{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px; 
+  background-color: #F5F5F5;
+  padding: 30px;
+  text-decoration: none;
+  color: #858585;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.Payment .center .header .links .navlink .icon{
+  font-size:  40px;
+
+}
+.Payment .center .header .links .navlink p{
+  font-size: 1.1rem;
+}
+.Payment .center .header .links .navlink:hover{
+  background-color: var(--btn-color);
+  color: #fff;
+}
+.Payment .center .header .links .active{
+  background-color: var(--btn-color);
+  color: #fff;
+}
