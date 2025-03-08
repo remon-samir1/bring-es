@@ -16,19 +16,17 @@ const Payment = () => {
               <RiCashLine className="icon" />
               <p>Cash</p>
             </NavLink>
-            <NavLink className="navlink" to='visa'>
-              <IoMdCard className="icon"/>
+            <NavLink className="navlink" to="visa">
+              <IoMdCard className="icon" />
               <p>By visa</p>
-
             </NavLink>
             <NavLink className="navlink" to="applePay">
-              <FaApple className="icon"/>
+              <FaApple className="icon" />
               <p>Apple pay</p>
-
             </NavLink>
           </div>
         </div>
-        <Outlet/>
+        <Outlet />
       </div>
       <OrderSummary />
     </div>

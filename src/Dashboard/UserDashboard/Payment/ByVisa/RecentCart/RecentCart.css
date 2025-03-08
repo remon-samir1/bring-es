@@ -1,0 +1,45 @@
+.RecentCart {
+  width: 50%;
+  background-image: url("../../../../../images/visa.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 13rem;
+  padding: 20px;
+  color: #fff;
+  border-radius: 15px;
+}
+.RecentCart .cart {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.RecentCart .cart .details div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.RecentCart .cart .details div .name{
+  font-size: 1.1rem;
+
+}
+.RecentCart .cart .details div .cvc{
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.RecentCart .cart .details .number{
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+
+.RecentCart-Header {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+.RecentCart-Header span {
+  font-size: 1.2rem;
+  color: var(--second-text-color);
+}
