@@ -34,8 +34,16 @@ button {
   background-color: var(--btn-color);
   color: #fff;
   border-radius: 30px;
-}
+  transition: 0.5s;
+  border: 1px solid var(--btn-color);
 
+}
+.Button:hover{
+  background-color: #fff;
+  border: 1px solid var(--btn-color);
+  color: var(--btn-color);
+  font-weight: 600;
+}
 p{
   margin-bottom: 0;
 }

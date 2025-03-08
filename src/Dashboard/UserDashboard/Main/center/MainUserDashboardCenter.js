@@ -84,6 +84,7 @@ const MainUserDashboardCenter = () => {
       />
       <ProductsContainer
         header="Populer Foods"
+        to='/PopulerProducts'
         data={
           <div className="d-flex justify-content-evenly gap-3">
             <ProductCard />

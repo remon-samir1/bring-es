@@ -10,30 +10,27 @@ import MainUserDashboard from "./Dashboard/UserDashboard/Main/MainUserDashboard"
 import Message from "./Dashboard/UserDashboard/Message/Message";
 import Payment from "./Dashboard/UserDashboard/Payment/Payment";
 import ByVisa from "./Dashboard/UserDashboard/Payment/ByVisa/ByVisa";
-
+import PopulerProducts from "./Dashboard/UserDashboard/Products/PopulerProducts";
 
 function App() {
-
   return (
     <Routes>
-      <Route path="/" element={<Landing/>}/>
-      <Route path="/partner" element={<PartnerLanding/>}/>
-      <Route path="/login" element={<Login/>}/>
-      <Route path="/register" element={<Register/>}/>
+      <Route path="/" element={<Landing />} />
+      <Route path="/partner" element={<PartnerLanding />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
 
       {/* user dashboard */}
-      <Route path="/user-dashboard" element={<UserDashboard/>}>
-      <Route path="main" element={<MainUserDashboard/>}/>
-      <Route path="main/payment" element={<Payment/>}>
-      <Route path="visa" element={<ByVisa/>}/>
-        
-      </Route>
-      <Route path="message" element={<Message/>}/>
+      <Route path="/user-dashboard" element={<UserDashboard />}>
+        <Route path="main" element={<MainUserDashboard />} />
 
+        <Route path="main/payment" element={<Payment />}>
+          <Route path="visa" element={<ByVisa />} />
+        </Route>
+        <Route path="message" element={<Message />} />
       </Route>
+      <Route path="/PopulerProducts" element={<PopulerProducts />} />
     </Routes>
-    
-    
   );
 }
 
