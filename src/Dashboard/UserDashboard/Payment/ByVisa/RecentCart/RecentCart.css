@@ -13,6 +13,7 @@
 }
 .RecentCart:hover{
 transform: scale(0.98);
+
 }
 .RecentCart .cart {
   display: flex;
