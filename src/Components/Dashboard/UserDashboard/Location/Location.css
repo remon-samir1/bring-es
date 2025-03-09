@@ -1,0 +1,11 @@
+.Location p{
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 500;
+}
+ .location{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+}

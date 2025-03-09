@@ -17,6 +17,9 @@
   font-size: 0.6rem;
   color: var(--text-color);
 }
+.offcanvas-header .btn-close:focus{
+  box-shadow: none;
+}
 .offcanvas-title {
   font-size: 1.5rem !important;
 }
@@ -193,6 +196,7 @@ margin-top: 20px;
   text-decoration: none;
   transition: 0.7s;
   text-align: center;
+  height: max-content;
 }
 .offcanvas-body .checkout:hover{
   background-color: #fff;

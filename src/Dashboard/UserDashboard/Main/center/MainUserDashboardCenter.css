@@ -11,17 +11,7 @@ color: var(--text-color);
 font-size: 2rem;
 margin-bottom: 5px;
 }
-.MainUserDashboardCenter .header .text p{
-  color: var(--text-color);
-  font-size: 1rem;
-  font-weight: 500;
-}
-.MainUserDashboardCenter .header .text .location{
-  display: flex;
-  justify-content: start;
-  align-items: start;
-  gap: 10px;
-}
+
 
 .MainUserDashboardCenter .header .searchbox{
 width: 50%;

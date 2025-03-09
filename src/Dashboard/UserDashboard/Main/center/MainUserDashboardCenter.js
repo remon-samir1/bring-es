@@ -9,6 +9,7 @@ import RecentOrder from "../../../../Components/Dashboard/UserDashboard/RecentOr
 import Restaurant from "../../../../Components/Dashboard/UserDashboard/Restaurant/Restaurant";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
+import Location from "../../../../Components/Dashboard/UserDashboard/Location/Location";
 const MainUserDashboardCenter = () => {
   const centerRef = useRef(null)
   const offerRef = useRef(null)
@@ -31,15 +32,7 @@ const MainUserDashboardCenter = () => {
       <div className="header mt-4">
         <div className="text">
           <h4>Hello, Noura</h4>
-          <p>your current Location</p>
-          <div className="location">
-            <img
-              src={require("../../../../images/Location-colored.png")}
-              alt="Location"
-              loading="lazy"
-            />
-            <p>Elm Street, 23</p>
-          </div>
+         <Location/>
         </div>
         <div className="searchbox">
           <input type="text" placeholder="What do you want to eat today?" />
