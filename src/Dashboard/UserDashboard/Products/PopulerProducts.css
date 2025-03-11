@@ -1,0 +1,162 @@
+.PopulerProducts {
+  background-color: var(--bg-color);
+}
+.PopulerProducts .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 30px 60px;
+}
+.PopulerProducts .search {
+  width: 400px;
+  height: 55px;
+  background-color: #fff;
+  padding: 5px 15px;
+  border: 0.5px solid #d6d6d6;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.PopulerProducts .search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+}
+.PopulerProducts .search img {
+  width: 35px;
+}
+.PopulerProducts .cartShopping {
+  background-color: #fff;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #d6d6d6;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.PopulerProducts .cartShopping:hover {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.PopulerProducts .cartShopping img {
+  width: 2rem;
+}
+.PopulerProducts .categories {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.PopulerProducts .filters {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.PopulerProducts .filters .filter {
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #d6d6d6;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.PopulerProducts .filters .filter img {
+  width: 1.5rem;
+}
+
+.products{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+} 
+.PopulerProductCard {
+  width: 31%;
+  cursor: pointer;
+}
+.PopulerProductCard .img {
+  width: 100%;
+  height: 175px;
+  border-radius: 20px;
+}
+.PopulerProductCard .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.PopulerProductCard .data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+.PopulerProductCard .data .name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.PopulerProductCard .data .delivery {
+  font-size: 0.7rem;
+  font-weight: 600;
+
+  color: var(--text-color);
+  padding: 5px 10px;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+}
+.PopulerProductCard .data-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+.PopulerProductCard .data-2 .rating {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 7px;
+}
+.PopulerProductCard .data-2 .rating p {
+  font-size: 0.8rem;
+  color: var(--text-color);
+}
+.PopulerProductCard .data-2 .rating p span {
+  color: var(--second-text-color);
+}
+.PopulerProductCard .data-2 .category {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 7px;
+}
+.PopulerProductCard .data-2 .category p {
+  font-size: 0.8rem;
+  color: var(--second-text-color);
+}
+.PopulerProductCard .data-2 .delivery {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 7px;
+}
+.PopulerProductCard .data-2 .delivery p{
+  font-size: 0.8rem;
+  color: var(--second-text-color);
+}
+.PopulerProductCard .data-2 .rating img{
+  width: 20px;
+}
+.PopulerProductCard .data-2 .rating {
+}
