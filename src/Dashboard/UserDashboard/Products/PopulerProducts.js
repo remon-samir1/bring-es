@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import "./PopulerProducts.css";
 import Logo from "../../../Components/Logo";
 import { PiShoppingCartThin } from "react-icons/pi";
@@ -7,9 +7,23 @@ import { Axios } from "../../../Components/Helpers/Axios";
 import { Container } from "react-bootstrap";
 import CategoryCard from "../../../Components/Dashboard/UserDashboard/Category/CategoryCard";
 import PopulerProductCard from "./PopulerProductCard";
+import Filters from "./Filters/Filters";
 const PopulerProducts = () => {
+  const [modalShow, setModalShow] = useState(false);
+
+
+
+
   return (
     <div className="PopulerProducts">
+      {/*  filters */}
+      <Filters
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
+
+
+
       <div className="header">
         <div className="logo">
           <Logo width="150px" />
@@ -46,7 +60,7 @@ const PopulerProducts = () => {
         <CategoryCard/>
         </div>
         <div className="filters ">
-          <div className="filter"><img src={require('../../../images/filter.png')} alt="" /></div>
+          <div className="filter" onClick={() => setModalShow(true)}><img src={require('../../../images/filter.png')} alt="" /></div>
           <div className="filter"><img src={require('../../../images/sort.png')} alt="" /></div>
         </div>
 
