@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./PopulerProducts.css";
 import Logo from "../../../Components/Logo";
 import { PiShoppingCartThin } from "react-icons/pi";
@@ -14,9 +14,13 @@ const PopulerProducts = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
+  const viewRef = useRef(null)
+  useEffect(()=>{
+    viewRef.current.scrollIntoView({behavior:'smooth'})
+  },[])
   return (
     <div className="PopulerProducts">
+      <div ref={viewRef}  />
       {/* cart */}
       <Cart handleShow={handleShow} show={show} handleClose={handleClose} />
 
