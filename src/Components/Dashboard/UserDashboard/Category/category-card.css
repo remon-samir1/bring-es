@@ -20,5 +20,10 @@
   font-weight: 500;
 }
 .category-card:hover{
-transform: translateY(-15px);
+/* transform: translateY(-15px); */
+background-color: var(--btn-color);
+}
+.category-card:hover  h5{
+  color: #fff;
+
 }
