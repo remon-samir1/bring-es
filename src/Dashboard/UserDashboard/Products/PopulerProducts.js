@@ -8,21 +8,20 @@ import { Container } from "react-bootstrap";
 import CategoryCard from "../../../Components/Dashboard/UserDashboard/Category/CategoryCard";
 import PopulerProductCard from "./PopulerProductCard";
 import Filters from "./Filters/Filters";
+import Cart from "../Cart/Cart";
 const PopulerProducts = () => {
   const [modalShow, setModalShow] = useState(false);
-
-
-
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   return (
     <div className="PopulerProducts">
+      {/* cart */}
+      <Cart handleShow={handleShow} show={show} handleClose={handleClose} />
+
       {/*  filters */}
-      <Filters
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      />
-
-
+      <Filters show={modalShow} onHide={() => setModalShow(false)} />
 
       <div className="header">
         <div className="logo">
@@ -38,7 +37,7 @@ const PopulerProducts = () => {
               loading="lazy"
             />
           </div>
-          <div className="cartShopping">
+          <div className="cartShopping" onClick={handleShow}>
             <img
               src={require("../../../images/cartShoppingColored.png")}
               alt="shopping"
@@ -49,38 +48,42 @@ const PopulerProducts = () => {
       </div>
       <Container>
         <div className="categories">
-        <CategoryCard/>
-        <CategoryCard/>
-        <CategoryCard/>
-        <CategoryCard/>
-        <CategoryCard/>
-        <CategoryCard/>
-        <CategoryCard/>
-        <CategoryCard/>
-        <CategoryCard/>
+          <CategoryCard />
+          <CategoryCard />
+          <CategoryCard />
+          <CategoryCard />
+          <CategoryCard />
+          <CategoryCard />
+          <CategoryCard />
+          <CategoryCard />
+          <CategoryCard />
         </div>
         <div className="filters ">
-          <div className="filter" onClick={() => setModalShow(true)}><img src={require('../../../images/filter.png')} alt="" /></div>
-          <div className="filter"><img src={require('../../../images/sort.png')} alt="" /></div>
+          <div className="filter" onClick={() => setModalShow(true)}>
+            <img src={require("../../../images/filter.png")} alt="" />
+          </div>
+          <div className="filter">
+            <img src={require("../../../images/sort.png")} alt="" />
+          </div>
         </div>
 
-      {/* will map */}
+        {/* will map */}
         <Container className="products">
-        <PopulerProductCard />
-        <PopulerProductCard />
-        <PopulerProductCard />
-        <PopulerProductCard />
-        <PopulerProductCard />
-        <PopulerProductCard />
-        <PopulerProductCard />
-        <PopulerProductCard />
-        <PopulerProductCard />
-        <PopulerProductCard />
-        <PopulerProductCard />
-        <PopulerProductCard />
-        <PopulerProductCard />
-        <PopulerProductCard />
-        <PopulerProductCard />
+          <PopulerProductCard />
+          <PopulerProductCard />
+          <PopulerProductCard />
+          <PopulerProductCard />
+          <PopulerProductCard />
+          <PopulerProductCard />
+          <PopulerProductCard />
+          <PopulerProductCard />
+          <PopulerProductCard />
+          <PopulerProductCard />
+          <PopulerProductCard />
+          <PopulerProductCard />
+          <PopulerProductCard />
+          <PopulerProductCard />
+          <PopulerProductCard />
         </Container>
       </Container>
     </div>

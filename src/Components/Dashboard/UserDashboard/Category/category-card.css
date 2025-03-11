@@ -9,7 +9,7 @@
   border: 1px solid #D6D6D6;
   width: fit-content;
   cursor: pointer;
-  transition: 0.7s ease;
+  transition: 0.7s ;
 }
 .category-card img{
   width: 50px;
