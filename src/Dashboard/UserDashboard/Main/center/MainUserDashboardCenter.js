@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "./MainUserDashboardCenter.css";
 import { Link } from "react-router-dom";
 import CategoryCard from "../../../../Components/Dashboard/UserDashboard/Category/CategoryCard";
@@ -10,6 +10,7 @@ import Restaurant from "../../../../Components/Dashboard/UserDashboard/Restauran
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import Location from "../../../../Components/Dashboard/UserDashboard/Location/Location";
+import { Axios } from "../../../../Components/Helpers/Axios";
 const MainUserDashboardCenter = () => {
   const centerRef = useRef(null)
   const offerRef = useRef(null)
@@ -27,6 +28,12 @@ const MainUserDashboardCenter = () => {
   
     })
   })
+// get data
+useEffect(()=>{
+  Axios.get('./product').then(data => console.log(data.data.data.data))
+},[])
+
+
   return (
     <div className="MainUserDashboardCenter px-2" ref={centerRef}>
       <div className="header mt-4">

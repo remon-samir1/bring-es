@@ -1,0 +1,119 @@
+.modal-body {
+  background-color: var(--bg-color);
+  border-radius: 15px;
+  padding: 20px 5% !important;
+  overflow-y: scroll;
+}
+.modal-body .header {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  border-bottom: 1px solid #d6d6d6;
+  padding: 20px 0;
+}
+.modal-body .radio-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.modal-body input[type="radio"] {
+  display: none;
+}
+
+.modal-body .radio label {
+  font-size: 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.modal-body .radio label::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  border: 0.5px solid #d6d6d6;
+  display: inline-block;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+.modal-body .radio input:checked ~ label::before {
+  background-color: var(--btn-color);
+  background-image: url("../../../../images/checked-radio.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: none;
+}
+.modal-body .range {
+  flex: 1;
+}
+.modal-body .price-inputs .slider {
+  height: 1.5px;
+  background-color: #474747;
+  width: 100%;
+}
+.modal-body .slider .thumb {
+  font-size: 0.8rem;
+  text-align: center;
+   padding: 3px 20px;
+   border: 0.5px solid #474747; 
+  border-radius: 20px;
+  margin-top: 15px;
+  font-weight: 500;
+  outline: none;
+  cursor: grab;
+}
+.modal-body .slider .track {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  top: -4px;
+  background-color: var(--btn-color);
+  cursor: grab;
+}
+.modal-body .slider .track-0 , .false-0 , .disabled-0{
+  display: none !important;
+}
+.modal-body .slider:disabled .track{
+  background-color: gray;
+}
+.modal-body .price-inputs{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+
+}
+.modal-body .price-inputs .checkbox{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+}
+.modal-body .price-inputs .checkbox label{
+    font-size: 1rem;
+  text-transform: capitalize;
+  color: var(--text-color);
+  cursor: pointer;
+  font-weight: 500;
+}
+.modal-body .price-inputs .checkbox input{
+  accent-color: var(--btn-color);
+}
+
+.modal-body .price-inputs .disabled{
+  background-color: gray !important;
+}
+.modal-body .search{
+  margin-top: 60px;
+  text-align: center;
+
+}
+.modal-body .search .Button{
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+}

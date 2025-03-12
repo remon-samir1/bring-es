@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./PopulerProducts.css";
 import Logo from "../../../Components/Logo";
-import { PiShoppingCartThin } from "react-icons/pi";
 import Location from "../../../Components/Dashboard/UserDashboard/Location/Location";
 import { Axios } from "../../../Components/Helpers/Axios";
 import { Container } from "react-bootstrap";
@@ -15,7 +14,12 @@ const PopulerProducts = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const viewRef = useRef(null)
+  const [products , setProducts] = useState([])
   useEffect(()=>{
+   const res = Axios.get('./product').then(data=> console.log(data))
+
+
+
     viewRef.current.scrollIntoView({behavior:'smooth'})
   },[])
   return (
