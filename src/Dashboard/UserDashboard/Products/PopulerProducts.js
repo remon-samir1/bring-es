@@ -29,7 +29,7 @@ const PopulerProducts = () => {
       <Cart handleShow={handleShow} show={show} handleClose={handleClose} />
 
       {/*  filters */}
-      <Filters show={modalShow} onHide={() => setModalShow(false)} />
+      {/* <Filters show={modalShow} onHide={() => setModalShow(false)} /> */}
 
       <div className="header">
         <div className="logo">
