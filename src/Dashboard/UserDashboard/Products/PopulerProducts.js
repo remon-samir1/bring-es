@@ -102,7 +102,7 @@ const PopulerProducts = () => {
         <Container className="products">
           {skeleton ? (
             
-            <SkeletonShow length="15" width="22vw" height="200px" />
+            <SkeletonShow length="15" width="25vw" height="200px" />
           ) : (
             showProducts
           )}
