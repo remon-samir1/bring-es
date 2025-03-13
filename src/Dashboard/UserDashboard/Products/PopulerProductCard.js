@@ -1,17 +1,17 @@
 import React from "react";
 
-const PopulerProductCard = () => {
+const PopulerProductCard = (props) => {
   return (
     <div className="PopulerProductCard">
       <div className="img">
         <img
-          src={require("../../../images/populerCard.png")}
+          src={props.src}
           alt="food"
           loading="lazy"
         />
       </div>
       <div className="data">
-        <p className="name">food meal</p>
+        <p className="name">{props.title}</p>
         <p className="delivery">$2.00 Delivery</p>
       </div>
       <div className="data-2">
@@ -22,7 +22,7 @@ const PopulerProductCard = () => {
         </div>
         <div className="category">
           <img src={require('../../../images/category-icon.png')} loading="lazy" />
-          <p>freid food</p>
+          <p>{props.category}</p>
         </div>
         <div className="delivery">
           <img src={require('../../../images/delivery-icon.png')} loading="lazy" />

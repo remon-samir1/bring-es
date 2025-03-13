@@ -72,7 +72,7 @@ const Login = () => {
         const token = res.data.data.access_token;
         cookie.set("token", token);
         setLaoding(false);
-        nav("/");
+        window.location.pathname='/'
         console.log(res);
         console.log(token);
       }

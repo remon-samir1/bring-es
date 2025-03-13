@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./MainUserDashboardCenter.css";
 import { Link } from "react-router-dom";
 import CategoryCard from "../../../../Components/Dashboard/UserDashboard/Category/CategoryCard";
@@ -12,6 +12,11 @@ import { gsap } from "gsap";
 import Location from "../../../../Components/Dashboard/UserDashboard/Location/Location";
 import { Axios } from "../../../../Components/Helpers/Axios";
 const MainUserDashboardCenter = () => {
+    // state
+const [products , setProducts] = useState([]);
+
+
+    // useRef
   const centerRef = useRef(null)
   const offerRef = useRef(null)
   useGSAP(()=>{
@@ -30,10 +35,18 @@ const MainUserDashboardCenter = () => {
   })
 // get data
 useEffect(()=>{
-  Axios.get('./product').then(data => console.log(data.data.data.data))
+  Axios.get('/product').then(data=> setProducts(data.data.data.data.slice(-3)));
+  // Axios.get('/category').then(data=> console.log(data.data.data.data));
 },[])
-
-
+ 
+// Mapping
+ const showProducts = products.map((data , index)=>(
+  <ProductCard title={data.title} src={data.images[0]} price={data.price} />
+ ))
+ //  handleAddtoCart 
+ const handleAddtoCart = ()=>{
+  Axios.post('cart').then(data=>console.log(data.data))
+ }
   return (
     <div className="MainUserDashboardCenter px-2" ref={centerRef}>
       <div className="header mt-4">
@@ -87,9 +100,7 @@ useEffect(()=>{
         to='/PopulerProducts'
         data={
           <div className="d-flex justify-content-evenly gap-3">
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
+        {showProducts}
           </div>
         }
       />

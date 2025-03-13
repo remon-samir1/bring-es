@@ -13,18 +13,27 @@ const PopulerProducts = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const viewRef = useRef(null)
-  const [products , setProducts] = useState([])
-  useEffect(()=>{
-   const res = Axios.get('./product').then(data=> console.log(data))
+  const viewRef = useRef(null);
+  const [products, setProducts] = useState([]);
+
+  // get data
+  useEffect(() => {
+    const res = Axios.get("./product").then((data) =>
+      setProducts(data.data.data.data)
+    );
+    viewRef.current.scrollIntoView({ behavior: "smooth" });
+  }, []);
 
 
+    // Mapping
+const showProducts = products.map((data, index) => (
+  <PopulerProductCard key={index} title={data.title} src={data.images[0]} category={data.category.name} />
 
-    viewRef.current.scrollIntoView({behavior:'smooth'})
-  },[])
+))
+
   return (
     <div className="PopulerProducts">
-      <div ref={viewRef}  />
+      <div ref={viewRef} />
       {/* cart */}
       <Cart handleShow={handleShow} show={show} handleClose={handleClose} />
 
@@ -77,21 +86,7 @@ const PopulerProducts = () => {
 
         {/* will map */}
         <Container className="products">
-          <PopulerProductCard />
-          <PopulerProductCard />
-          <PopulerProductCard />
-          <PopulerProductCard />
-          <PopulerProductCard />
-          <PopulerProductCard />
-          <PopulerProductCard />
-          <PopulerProductCard />
-          <PopulerProductCard />
-          <PopulerProductCard />
-          <PopulerProductCard />
-          <PopulerProductCard />
-          <PopulerProductCard />
-          <PopulerProductCard />
-          <PopulerProductCard />
+        {showProducts}
         </Container>
       </Container>
     </div>

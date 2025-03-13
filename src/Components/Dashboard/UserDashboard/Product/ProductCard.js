@@ -1,6 +1,7 @@
 import React from "react";
 import "./ProductCard.css";
-const ProductCard = () => {
+const ProductCard = (props) => {
+  
   return (
     <div className="ProductCard">
       <div className="badges">
@@ -15,7 +16,7 @@ const ProductCard = () => {
       </div>
       <div className="img">
         <img
-          src={require("../../../../images/fresh-tasty-burger.png")}
+          src={props.src}
           alt="food"
           loading="lazy"
         />
@@ -49,12 +50,12 @@ const ProductCard = () => {
       </div>
       <div className="details">
         <div className="data">
-          <p className="name">fish burger</p>
+          <p className="name">{props.title}</p>
           <p className="price">
-            <span>$</span>5.59
+            <span>$</span>{props.price}
           </p>
         </div>
-        <div className="add">
+        <div className="add" onClick={props.handleAddtoCart}>
           <img
             src={require("../../../../images/plus.png")}
             alt="plus"

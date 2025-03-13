@@ -25,7 +25,8 @@
   cursor: pointer;
 }
 .ProductCard .img{
-  width: 100%;
+  width: 90%;
+  padding: 10px 0;
   text-align: center;
 }
 .ProductCard .img img{
