@@ -35,4 +35,5 @@ color: var(--btn-color) ;
 text-decoration: none;
 font-weight: 3rem;
 font-weight: 600;
+transition: 0.3s;
 }
