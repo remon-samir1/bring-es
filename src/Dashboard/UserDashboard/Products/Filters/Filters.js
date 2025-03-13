@@ -76,7 +76,7 @@ export default function Filters(props) {
           <h3 className="header">Sort by price range</h3>
           <div className="price-inputs">
          <div className="checkbox">
-          <input type="checkbox" id="price" onChange={()=> setDisabled(prev=> !prev)} />
+          <input type="checkbox" id="price" value={disabled} onChange={()=> setDisabled(prev=> !prev)} checked={disabled} />
           <label htmlFor="price">price</label>
          </div>
           <div className="range">
