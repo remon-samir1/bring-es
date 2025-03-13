@@ -8,6 +8,8 @@ import CategoryCard from "../../../Components/Dashboard/UserDashboard/Category/C
 import PopulerProductCard from "./PopulerProductCard";
 import Filters from "./Filters/Filters";
 import Cart from "../Cart/Cart";
+import Pagination from "../../../Components/Pagination/Pagination";
+import SkeletonShow from "../../../Components/Skeleton/Skeleton";
 const PopulerProducts = () => {
   const [modalShow, setModalShow] = useState(false);
   const [show, setShow] = useState(false);
@@ -15,21 +17,33 @@ const PopulerProducts = () => {
   const handleShow = () => setShow(true);
   const viewRef = useRef(null);
   const [products, setProducts] = useState([]);
-
+  const [page, setPage] = useState(1);
+  const [total, setTotal] = useState();
+  const [skeleton, setSkeleton] = useState(false);
+  console.log(page);
   // get data
   useEffect(() => {
-    const res = Axios.get("./product").then((data) =>
-      setProducts(data.data.data.data)
-    );
+    setSkeleton(true);
+    const res = Axios.get(`./product?page=${page}`)
+      .then(
+        (data) => (
+          setProducts(data.data.data.data), setTotal(data.data.data.total)
+        )
+      )
+      .finally(() => setSkeleton(false));
     viewRef.current.scrollIntoView({ behavior: "smooth" });
-  }, []);
+  }, [page]);
+  console.log(products);
 
-
-    // Mapping
-const showProducts = products.map((data, index) => (
-  <PopulerProductCard key={index} title={data.title} src={data.images[0]} category={data.category.name} />
-
-))
+  // Mapping
+  const showProducts = products.map((data, index) => (
+    <PopulerProductCard
+      key={index}
+      title={data.title}
+      src={data.images[0]}
+      category={data.category.name}
+    />
+  ));
 
   return (
     <div className="PopulerProducts">
@@ -86,8 +100,15 @@ const showProducts = products.map((data, index) => (
 
         {/* will map */}
         <Container className="products">
-        {showProducts}
+          {skeleton ? (
+            <SkeletonShow length="15" width="350px" height="200px" />
+          ) : (
+            showProducts
+          )}
         </Container>
+      </Container>
+      <Container className="text-center mt-3">
+        <Pagination itemsPerPage={15} setPage={setPage} total={total} />
       </Container>
     </div>
   );
