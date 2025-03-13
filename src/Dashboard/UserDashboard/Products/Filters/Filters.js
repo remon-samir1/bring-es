@@ -1,7 +1,7 @@
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "./Filters.css";
-import ReactSlider from "react-slider";
+// import ReactSlider from "react-slider";
 import { useState } from "react";
 export default function Filters(props) {
   const min = 100;
