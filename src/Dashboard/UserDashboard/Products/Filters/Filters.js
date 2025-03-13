@@ -80,7 +80,7 @@ export default function Filters(props) {
           <label htmlFor="price">price</label>
          </div>
           <div className="range">
-            <ReactSlider
+            {/* <ReactSlider
             min={min}
             max={max}
             value={price}
@@ -96,7 +96,7 @@ export default function Filters(props) {
                 pearling
                 minDistance={10}
                 disabled={!disabled}
-                />
+                /> */}
                 </div>
           </div>
         </div>
