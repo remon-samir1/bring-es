@@ -101,7 +101,8 @@ const PopulerProducts = () => {
         {/* will map */}
         <Container className="products">
           {skeleton ? (
-            <SkeletonShow length="15" width="350px" height="200px" />
+            
+            <SkeletonShow length="15" width="22vw" height="200px" />
           ) : (
             showProducts
           )}
