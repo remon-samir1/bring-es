@@ -15,6 +15,8 @@
     "firebase": "^11.4.0",
     "gsap": "^3.12.7",
     "libphonenumber-js": "^1.11.18",
+    "rc-slider": "^11.1.8",
+    "rc-tooltip": "^6.4.0",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.7",
     "react-dom": "^19.0.0",

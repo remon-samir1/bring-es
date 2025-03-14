@@ -20,11 +20,24 @@ const PopulerProducts = () => {
   const [page, setPage] = useState(1);
   const [total, setTotal] = useState();
   const [skeleton, setSkeleton] = useState(false);
-  console.log(page);
+  const [categories, setCategories] = useState([]);
+  const min = 100;
+  const max = 1200;
+  const [price, setPrice] = useState([min, max]);
+  const [filter, setFilter] = useState(false);
+  console.log( price[0]);
+  console.log(price);
+
   // get data
   useEffect(() => {
     setSkeleton(true);
-    const res = Axios.get(`./product?page=${page}`)
+    const res = Axios.get(`./product?page=${page}`,{ 
+    params:{
+      // categories:categories,
+      min_price: price[0],
+      max_price: price[1],
+    }}
+    )
       .then(
         (data) => (
           setProducts(data.data.data.data), setTotal(data.data.data.total)
@@ -32,7 +45,8 @@ const PopulerProducts = () => {
       )
       .finally(() => setSkeleton(false));
     viewRef.current.scrollIntoView({ behavior: "smooth" });
-  }, [page]);
+    
+  }, [page, filter]);
   console.log(products);
 
   // Mapping
@@ -44,7 +58,7 @@ const PopulerProducts = () => {
       category={data.category.name}
     />
   ));
-
+  console.log(filter);
   return (
     <div className="PopulerProducts">
       <div ref={viewRef} />
@@ -52,7 +66,15 @@ const PopulerProducts = () => {
       <Cart handleShow={handleShow} show={show} handleClose={handleClose} />
 
       {/*  filters */}
-      <Filters show={modalShow} onHide={() => setModalShow(false)} />
+      <Filters
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+        categories={categories}
+        setCategories={setCategories}
+        price={price}
+        setPrice={setPrice}
+        setFilter={setFilter}
+      />
 
       <div className="header">
         <div className="logo">
@@ -98,10 +120,8 @@ const PopulerProducts = () => {
           </div>
         </div>
 
-        {/* will map */}
         <Container className="products">
           {skeleton ? (
-            
             <SkeletonShow length="15" width="25vw" height="200px" />
           ) : (
             showProducts

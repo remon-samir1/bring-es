@@ -9,6 +9,7 @@ import 'swiper/less/navigation';
 import 'swiper/less/pagination';
 import "tailwindcss";
 import 'react-loading-skeleton/dist/skeleton.css'
+import 'rc-slider/assets/index.css';
 
 import { BrowserRouter as Router} from 'react-router-dom';
 

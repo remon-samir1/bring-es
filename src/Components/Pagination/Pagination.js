@@ -3,7 +3,6 @@ import ReactPaginate from "react-paginate";
 import './Pagination.css'
 export default function Pagination({ setPage  , itemsPerPage , total}) {
 const pageCount = total / itemsPerPage
-console.log(pageCount);
   return (
     <>
       <ReactPaginate

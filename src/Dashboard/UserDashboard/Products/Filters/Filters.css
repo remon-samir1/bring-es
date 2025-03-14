@@ -117,3 +117,40 @@
   padding: 10px;
   border-radius: 10px;
 }
+.rc-tooltip-inner{
+  font-size: 0.8rem !important;
+  text-align: center !important;
+   padding: 3px 20px !important;
+   border: 0.5px solid #474747 !important; 
+  border-radius: 20px !important;
+  font-weight: 500 !important;
+  outline: none !important;
+  cursor: grab !important;
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  min-height: auto !important;
+  
+}
+
+.rc-tooltip-placement-bottom .rc-tooltip-arrow{
+  display: none;
+}
+.rc-slider-step{
+  height: 1.5px !important;
+  background: #474747bc !important;
+  width: 100%;
+}
+.rc-slider-track, .rc-slider-tracks {
+  position: absolute;
+  height: 1.5px !important;
+  background-color: #474747bc !important;
+  border-radius: 6px;
+}
+.rc-slider-handle {
+background: var(--btn-color) !important;
+border: none !important;
+opacity: 1 !important;
+}
+.rc-slider-disabled{
+  background-color: transparent !important;
+}
