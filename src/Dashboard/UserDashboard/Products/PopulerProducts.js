@@ -21,33 +21,32 @@ const PopulerProducts = () => {
   const [total, setTotal] = useState();
   const [skeleton, setSkeleton] = useState(false);
   const [categories, setCategories] = useState([]);
+
+  // prices
   const min = 100;
   const max = 1200;
   const [price, setPrice] = useState([min, max]);
   const [filter, setFilter] = useState(false);
-  console.log( price[0]);
-  console.log(price);
 
   // get data
   useEffect(() => {
     setSkeleton(true);
-    const res = Axios.get(`./product?page=${page}`,{ 
-    params:{
-      // categories:categories,
-      min_price: price[0],
-      max_price: price[1],
-    }}
-    )
+    const res = Axios.get(`./product?page=${page}`, {
+      params: {
+        // categories:categories,
+        min_price: price[0],
+        max_price: price[1],
+      },
+    })
       .then(
         (data) => (
           setProducts(data.data.data.data), setTotal(data.data.data.total)
         )
       )
+      Axios.get('/category').then(data=>console.log(data.data))
       .finally(() => setSkeleton(false));
     viewRef.current.scrollIntoView({ behavior: "smooth" });
-    
   }, [page, filter]);
-  console.log(products);
 
   // Mapping
   const showProducts = products.map((data, index) => (
@@ -58,7 +57,6 @@ const PopulerProducts = () => {
       category={data.category.name}
     />
   ));
-  console.log(filter);
   return (
     <div className="PopulerProducts">
       <div ref={viewRef} />

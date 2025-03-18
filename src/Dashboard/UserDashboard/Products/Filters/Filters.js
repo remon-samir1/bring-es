@@ -5,13 +5,15 @@ import { useState } from "react";
 import Slider, { Range } from "rc-slider";
 import Tooltip from "rc-tooltip";
 import "rc-tooltip/assets/bootstrap.css";
+import { useEffect } from "react";
+import { Axios } from "../../../../Components/Helpers/Axios";
 export default function Filters(props) {
   const min = 100;
   const max = 1200;
   const [price, setPrice] = useState([min, max]);
   const [disabled, setDisabled] = useState(false);
   const [visible, setVisible] = useState(false);
-
+  
   const handleRender = (node, props) => {
     return (
       <Tooltip
@@ -26,7 +28,11 @@ export default function Filters(props) {
       </Tooltip>
     );
   };
-  console.log(props.price[1]);
+
+
+  useEffect(()=>{
+    Axios.get('/category').then(data=>console.log(data.data))
+  },[])
   const getCategoreisData = (e) => {
     props.setCategories(...props.categries, e.target.value);
   };

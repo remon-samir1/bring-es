@@ -11,6 +11,7 @@ import Message from "./Dashboard/UserDashboard/Message/Message";
 import Payment from "./Dashboard/UserDashboard/Payment/Payment";
 import ByVisa from "./Dashboard/UserDashboard/Payment/ByVisa/ByVisa";
 import PopulerProducts from "./Dashboard/UserDashboard/Products/PopulerProducts";
+import AdminDahboard from "./Dashboard/AdminDahboard/AdminDahboard";
 
 function App() {
   return (
@@ -21,15 +22,18 @@ function App() {
       <Route path="/register" element={<Register />} />
 
       {/* user dashboard */}
-      <Route path="/user-dashboard" element={<UserDashboard />}>
+      <Route path="/dashboard" element={<UserDashboard />}>
         <Route path="main" element={<MainUserDashboard />} />
 
         <Route path="main/payment" element={<Payment />}>
           <Route path="visa" element={<ByVisa />} />
         </Route>
         <Route path="message" element={<Message />} />
+      <Route path="admin-main" element={<AdminDahboard/>}/>
       </Route>
       <Route path="/PopulerProducts" element={<PopulerProducts />} />
+
+      {/* admin dahsboard */}
     </Routes>
   );
 }

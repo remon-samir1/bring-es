@@ -53,16 +53,10 @@ const Register = () => {
 
         cookie.set("token", token);
         setLaoding(false);
-        // nav("/");
+        nav("/");
         console.log(res);
         console.log(token);
 
-        
-        // await setDoc(doc(db, "user", "LA"), {
-        //   name: "Los Angeles",
-        //   state: "CA",
-        //   country: "USA"
-        // });
       }
     } catch (err) {
       setLaoding(false);

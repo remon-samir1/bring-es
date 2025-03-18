@@ -1,0 +1,73 @@
+.TopBar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.TopBar .search{
+  width: 50%;
+  background-color: #fff;
+  padding: 5px 15px;
+  border: 0.5px solid #D6D6D6;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .TopBar .search input{
+  flex: 1;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  }
+  .TopBar .search img{
+  width: 35px;
+  }
+  
+  .TopBar .icons .icon{
+    border-radius: 8px;
+    font-size: 35px;
+    background-color: var(--primary-color);
+    padding: 8px;
+    color: var(--btn-color);
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .TopBar .icons .icon:hover{
+    background: none;
+  }
+  .TopBar .icons img{
+    transition: 0.3s;
+  }
+  .TopBar .icons img:hover{
+    background: none;
+
+
+  }
+  .TopBar .icons .user{
+    background-color: var(--btn-color);
+    color: #fff;
+    /* padding: 5px 0px 5px 5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    height: max-content;
+    border-radius: 10px;
+    height: 45px;
+    gap: 10px;
+  }
+  .TopBar .icons .user span{
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+  .TopBar .icons .user div{
+    width: 40px;
+    height: 100%;
+    background-color: #fff;
+    padding: 5px;
+  }
+  .TopBar .icons .user div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

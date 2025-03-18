@@ -1,0 +1,63 @@
+.Invoices{
+  margin-top: 30px;
+}
+.Invoices .header h3{
+font-size: 1.1rem;
+color: var(--text-color);
+}
+.Invoices .boxs-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.Invoices .box{
+  border: 1px solid #D6D6D6;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ cursor: pointer;
+  border-radius: 5px;
+  padding: 20px ;
+  flex: 1;
+  transition: 0.8s ease;
+}
+.Invoices .box:hover{
+  background-color: var(--btn-color);
+}
+.Invoices .box:hover .texts h4,.Invoices .box:hover .texts p{
+  color: #fff;
+}
+.Invoices .box:hover .img{
+  background-color: #fff;
+}
+.Invoices .box .img{
+  border-radius: 50%;
+  width: 95px;
+  height: 95px;
+  text-align: center;
+  line-height: 95px;
+  background-color: var(--primary-color);
+}
+.Invoices .box .texts{
+  text-align: center;
+}
+.Invoices .box .texts h4{
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-top: 10px;
+  transition: 0.3s ease;
+
+}
+.Invoices .box .texts p{
+  font-size: 0.8rem;
+  color: var(--text-color);
+  margin-top: 10px;
+  transition: 0.3s ease;
+
+  font-size: 1rem;
+  font-weight: 400;
+}

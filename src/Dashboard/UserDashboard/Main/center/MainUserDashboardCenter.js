@@ -41,7 +41,7 @@ useEffect(()=>{
  
 // Mapping
  const showProducts = products.map((data , index)=>(
-  <ProductCard title={data.title} src={data.images[0]} price={data.price} />
+  <ProductCard key={index} title={data.title} src={data.images[0]} price={data.price} />
  ))
  //  handleAddtoCart 
  const handleAddtoCart = ()=>{
