@@ -1,3 +1,16 @@
 .AdminDahboard{
   
 }
+.BarChart{
+  height: 550px;
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid #D6D6D6;
+  padding: 12px ;
+  border-radius: 10px;
+}
+.BarChart h3{
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
