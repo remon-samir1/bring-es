@@ -35,7 +35,7 @@ const Navbar = (props) => {
   return (
     <>
       <div className="navbar px-4 container">
-        <Link to='/user-dashboard/main' className="logo"><Logo width='150px' to='/user-dashboard/main'/></Link>
+        <Link to='/dashboard/main' className="logo"><Logo width='150px' to='/dashboard/main'/></Link>
 
         <div className="links">
           <Link className="nav-links" to={props.path1}>
