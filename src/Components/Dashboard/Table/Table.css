@@ -1,0 +1,22 @@
+.custom-table {
+  width: 100%;
+  text-align: center;
+}
+
+.custom-table th {
+  text-transform: capitalize;
+}
+.custom-table td,
+.custom-table th {
+  padding: 20px;
+  font-size: 1.1rem;
+  color: var(--text-color);
+  font-weight: 400;
+}
+.custom-table tr {
+  border-bottom: 1px solid #d6d6d6;
+}
+.custom-table td:first-child,
+.custom-table th:first-child{
+  text-align: start;
+}

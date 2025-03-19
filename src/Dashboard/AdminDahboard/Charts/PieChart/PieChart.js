@@ -6,9 +6,10 @@ const data = [
   { name: 'Group B', value: 300 },
   { name: 'Group C', value: 300 },
   { name: 'Group D', value: 200 },
+  { name: 'Group D', value: 200 },
 ];
 
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+const COLORS = ['#7C0C03', '#9E0529', '#AA4038', '#C2534A','#E9E9E9'];
 
 const RADIAN = Math.PI / 180;
 const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
@@ -23,20 +24,20 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
   );
 };
 
-export default class Example extends PureComponent {
+export default class PChart extends PureComponent {
   static demoUrl = 'https://codesandbox.io/s/pie-chart-with-customized-label-dlhhj';
 
   render() {
     return (
-      <ResponsiveContainer width="100%" height="100%">
-        <PieChart width={400} height={400}>
+      <ResponsiveContainer width="100%" height="70%">
+        <PieChart width={500} height={500}>
           <Pie
             data={data}
             cx="50%"
             cy="50%"
             // labelLine={false}
-            
-            outerRadius={80}
+             stroke='none'
+            outerRadius={110}
             fill="#8884d8"
             dataKey="value"
           >
