@@ -68,7 +68,7 @@ const Cart = (props) => {
             loading="lazy"
           />
         </button>
-        <Link className="checkout Button" to="/user-dashboard/main/payment/visa">
+        <Link className="checkout Button" to="/dashboard/main/payment/visa">
           Check Out ($202.00)
         </Link>
         </Offcanvas.Body>
