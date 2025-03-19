@@ -15,6 +15,17 @@
 }
 .custom-table tr {
   border-bottom: 1px solid #d6d6d6;
+  transition: 0.6s;
+
+}
+.custom-table tr:hover{
+  background-color: var(--btn-color);
+}
+.custom-table tr:hover td {
+  color: #fff;
+}
+.custom-table tr:hover  th{
+  color: #fff;
 }
 .custom-table td:first-child,
 .custom-table th:first-child{
