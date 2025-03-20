@@ -253,7 +253,7 @@ const SideBar = () => {
           </div>
           <span>Dashboard</span>
         </NavLink>
-        <NavLink to='dashboard/admin-orders' className="link">
+        <NavLink to='/dashboard/admin-orders' className="link">
           <div className="img">
             
 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
