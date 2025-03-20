@@ -1,0 +1,9 @@
+.AdminOrders{
+
+}
+.AdminOrders .boxs-container{
+  margin-top: 30px;
+  display: flex;
+  align-items:start;
+  
+}

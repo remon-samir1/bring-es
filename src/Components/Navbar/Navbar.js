@@ -34,7 +34,7 @@ const Navbar = (props) => {
   }, [isOpen]);
   return (
     <>
-      <div className="navbar px-4 container">
+      <div className="navbar px-4 py-3 container">
         <Link to='/dashboard/main' className="logo"><Logo width='150px' to='/dashboard/main'/></Link>
 
         <div className="links">

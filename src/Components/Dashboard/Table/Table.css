@@ -18,6 +18,9 @@
   transition: 0.6s;
 
 }
+.custom-table tr:last-child{
+  border-bottom: none;
+}
 .custom-table tr:hover{
   background-color: var(--btn-color);
 }

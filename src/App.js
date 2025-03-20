@@ -12,6 +12,7 @@ import Payment from "./Dashboard/UserDashboard/Payment/Payment";
 import ByVisa from "./Dashboard/UserDashboard/Payment/ByVisa/ByVisa";
 import PopulerProducts from "./Dashboard/UserDashboard/Products/PopulerProducts";
 import AdminDahboard from "./Dashboard/AdminDahboard/AdminDahboard";
+import AdminOrders from "./Dashboard/AdminDahboard/Orders/AdminOrders";
 
 function App() {
   return (
@@ -24,16 +25,17 @@ function App() {
       {/* user dashboard */}
       <Route path="/dashboard" element={<UserDashboard />}>
         <Route path="main" element={<MainUserDashboard />} />
-
+       {/* start payment method for user */}
         <Route path="main/payment" element={<Payment />}>
           <Route path="visa" element={<ByVisa />} />
         </Route>
+       {/* End payment method for user */}
+
         <Route path="message" element={<Message />} />
-      <Route path="admin-main" element={<AdminDahboard/>}/>
+        <Route path="admin-main" element={<AdminDahboard />} />
+        <Route path="admin-orders" element={<AdminOrders />} />
       </Route>
       <Route path="/PopulerProducts" element={<PopulerProducts />} />
-
-      {/* admin dahsboard */}
     </Routes>
   );
 }

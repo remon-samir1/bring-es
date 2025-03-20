@@ -13,13 +13,13 @@
   color: var(--text-color);
   margin-bottom: 10px;
 }
-.AdminDahboard .table-container {
+ .table-container {
   padding: 20px;
   flex: 1;
   border: 1px solid #d6d6d6;
   border-radius: 8px;
 }
-.AdminDahboard .table-container h3 {
+ .table-container h3 {
   font-size: 1rem;
   align-self: start;
 

@@ -41,6 +41,8 @@ color: var(--text-color);
   text-align: center;
   line-height: 95px;
   background-color: var(--primary-color);
+  color: var(--btn-color);
+  fill: red;
 }
 .Invoices .box .texts{
   text-align: center;
