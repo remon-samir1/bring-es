@@ -21,16 +21,39 @@
 .custom-table tbody tr:last-child{
   border-bottom: none;
 }
-.custom-table tr:hover{
-  background-color: var(--btn-color);
-}
-.custom-table tr:hover td {
+
+/* .custom-table tr:hover td {
   color: #fff;
 }
 .custom-table tr:hover  th{
   color: #fff;
 }
+.custom-table tr:hover .view{
+  color: #fff;
+} */
 .custom-table td:first-child,
 .custom-table th:first-child{
   text-align: start;
+}
+.custom-table .view{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-color);
+  border: 1px solid #D6D6D6;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  width: fit-content;
+  margin: auto;
+  transition: 0.4s ease;
+}
+
+.custom-table .view:hover{
+  border: 1px solid var(--btn-color);
+  background-color: var(--btn-color);
+  color: #fff;
+
 }
