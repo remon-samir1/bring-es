@@ -11,9 +11,10 @@ export default function Filters(props) {
   const min = 100;
   const max = 1200;
   const [price, setPrice] = useState([min, max]);
+  const [CategoryData, setCategoryData] = useState([]);
   const [disabled, setDisabled] = useState(false);
   const [visible, setVisible] = useState(false);
-  
+
   const handleRender = (node, props) => {
     return (
       <Tooltip
@@ -28,11 +29,20 @@ export default function Filters(props) {
       </Tooltip>
     );
   };
+  const categoryShowData = CategoryData.slice(-6).map((data, index) => (
+    <div className="radio" key={index}>
+      <input
+        type="radio"
+        id={data.name}
+        onChange={() => props.setCategories((prev) => [...prev, data.id])}
+      />
+      <label htmlFor={data.name}>{data.name}</label>
+    </div>
+  ));
 
-
-  useEffect(()=>{
-    Axios.get('/category').then(data=>console.log(data.data))
-  },[])
+  useEffect(() => {
+    Axios.get("/category").then((data) => setCategoryData(data.data.data));
+  }, []);
   const getCategoreisData = (e) => {
     props.setCategories(...props.categries, e.target.value);
   };
@@ -48,68 +58,7 @@ export default function Filters(props) {
         {/* filter categories */}
         <div className="Category-Filters">
           <h3 className="header">filter categories</h3>
-          <div className="radio-container">
-            <div className="radio">
-              <input
-                type="radio"
-                id="fried"
-                onChange={() =>
-                  props.setCategories((prev) => [...prev, "fried"])
-                }
-              />
-              <label htmlFor="fried">Fried food</label>
-            </div>
-            <div className="radio">
-              <input
-                type="radio"
-                id="seafood"
-                onChange={() =>
-                  props.setCategories((prev) => [...prev, "seafood"])
-                }
-              />
-              <label htmlFor="seafood">seafood</label>
-            </div>
-            <div className="radio">
-              <input
-                type="radio"
-                id="fruits"
-                onChange={() =>
-                  props.setCategories((prev) => [...prev, "fruits"])
-                }
-              />
-              <label htmlFor="fruits">fruits</label>
-            </div>
-            <div className="radio">
-              <input
-                type="radio"
-                id="vegetables"
-                onChange={() =>
-                  props.setCategories((prev) => [...prev, "vegetables"])
-                }
-              />
-              <label htmlFor="vegetables">vegetables</label>
-            </div>
-            <div className="radio">
-              <input
-                type="radio"
-                id="breads"
-                onChange={() =>
-                  props.setCategories((prev) => [...prev, "breads"])
-                }
-              />
-              <label htmlFor="breads">breads</label>
-            </div>
-            <div className="radio">
-              <input
-                type="radio"
-                id="juices"
-                onChange={() =>
-                  props.setCategories((prev) => [...prev, "juices"])
-                }
-              />
-              <label htmlFor="juices">juices</label>
-            </div>
-          </div>
+          <div className="radio-container">{categoryShowData}</div>
         </div>
 
         {/* Highlights */}

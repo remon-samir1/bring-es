@@ -21,7 +21,6 @@ const PopulerProducts = () => {
   const [total, setTotal] = useState();
   const [skeleton, setSkeleton] = useState(false);
   const [categories, setCategories] = useState([]);
-
   // prices
   const min = 100;
   const max = 1200;
@@ -33,7 +32,7 @@ const PopulerProducts = () => {
     setSkeleton(true);
     const res = Axios.get(`./product?page=${page}`, {
       params: {
-        // categories:categories,
+        categories: categories.join(','),
         min_price: price[0],
         max_price: price[1],
       },
@@ -121,7 +120,8 @@ const PopulerProducts = () => {
           {skeleton ? (
             <SkeletonShow length="15" width="25vw" height="200px" />
           ) : (
-            showProducts
+            showProducts.length < 1 ? <div className="text-center w-100">
+              <p className="text-secondary">Items not found</p> </div> : showProducts
           )}
         </Container>
       </Container>

@@ -14,6 +14,7 @@ import { Axios } from "../../../../Components/Helpers/Axios";
 const MainUserDashboardCenter = () => {
     // state
 const [products , setProducts] = useState([]);
+const [categories , setCategories] = useState([]);
 
 
     // useRef
@@ -36,7 +37,7 @@ const [products , setProducts] = useState([]);
 // get data
 useEffect(()=>{
   Axios.get('/product').then(data=> setProducts(data.data.data.data.slice(-3)));
-  // Axios.get('/category').then(data=> console.log(data.data.data.data));
+  Axios.get('/category').then(data=> setCategories(data.data.data));
 },[])
  
 // Mapping

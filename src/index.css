@@ -63,6 +63,6 @@ p{
   border-radius: 6px;
  }
  ::-webkit-scrollbar-thumb{
-  background:gray;
+  background:rgb(57, 55, 55);
   border-radius: 6px;
  }
