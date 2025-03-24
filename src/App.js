@@ -14,6 +14,7 @@ import PopulerProducts from "./Dashboard/UserDashboard/Products/PopulerProducts"
 import AdminDahboard from "./Dashboard/AdminDahboard/AdminDahboard";
 import AdminOrders from "./Dashboard/AdminDahboard/Orders/AdminOrders";
 import OrdersDetails from "./Dashboard/AdminDahboard/Orders/OrdersDetails/OrdersDetails";
+import Customers from "./Dashboard/AdminDahboard/Customers/Customers";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="admin-main" element={<AdminDahboard />} />
         <Route path="admin-orders" element={<AdminOrders />} />
          <Route path="/dashboard/admin-orders/details" element={<OrdersDetails/>}/>
+        <Route path="admin-customers" element={<Customers />} />
 
       </Route>
       <Route path="/PopulerProducts" element={<PopulerProducts />} />

@@ -9,7 +9,7 @@ const HeroSection = () => {
       x: 30,
       opacity: 0,
       duration: 1,
-      delay:0.1
+      delay:0.5
     });
     gsap.from(".herosection .content", {
       x: -30,

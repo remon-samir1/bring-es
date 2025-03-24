@@ -1,0 +1,52 @@
+.Customers{
+
+}
+.Customers .options{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.Customers .options .search{
+  width: 300px;
+  background-color: #fff;
+  padding: 5px 15px;
+  border: 0.5px solid #D6D6D6;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .Customers .options .search input{
+  flex: 1;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  }
+  .Customers .options .search img{
+  width: 35px;
+  cursor: pointer;
+  }
+  
+  .Customers .options .add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: var(--btn-color);
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  .Customers .Table .custom-table thead tr:first-child{
+    border-bottom:none;
+    
+  }
+  .Customers .Table .custom-table thead {
+  height: 100px !important;
+
+  }
+  

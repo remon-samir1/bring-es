@@ -11,49 +11,59 @@ import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import Location from "../../../../Components/Dashboard/UserDashboard/Location/Location";
 import { Axios } from "../../../../Components/Helpers/Axios";
+import SkeletonShow from "../../../../Components/Skeleton/Skeleton";
 const MainUserDashboardCenter = () => {
-    // state
-const [products , setProducts] = useState([]);
-const [categories , setCategories] = useState([]);
+  // state
+  const [products, setProducts] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [loading, setLaoding] = useState(false);
 
+  // useRef
+  const centerRef = useRef(null);
+  const offerRef = useRef(null);
+  useGSAP(() => {
+    gsap.from(centerRef.current, {
+      y: 30,
+      opacity: 0,
+      duration: 1,
+    });
 
-    // useRef
-  const centerRef = useRef(null)
-  const offerRef = useRef(null)
-  useGSAP(()=>{
-    gsap.from(centerRef.current,{
-      y:30,
-      opacity:0,
-      duration:1
-    })
+    gsap.from(offerRef.current, {
+      y: -30,
 
-    gsap.from(offerRef.current,{
-      y:-30,
+      duration: 1,
+    });
+  });
+  // get data
+  useEffect(() => {
+    setLaoding(true);
+    Axios.get("/product").then((data) =>
+      setProducts(data.data.data.data.slice(-3))
+    );
+    Axios.get("/category")
+      .then((data) => setCategories(data.data.data))
+      .finally(() => setLaoding(false));
+  }, []);
 
-      duration:1,
-  
-    })
-  })
-// get data
-useEffect(()=>{
-  Axios.get('/product').then(data=> setProducts(data.data.data.data.slice(-3)));
-  Axios.get('/category').then(data=> setCategories(data.data.data));
-},[])
- 
-// Mapping
- const showProducts = products.map((data , index)=>(
-  <ProductCard key={index} title={data.title} src={data.images[0]} price={data.price} />
- ))
- //  handleAddtoCart 
- const handleAddtoCart = ()=>{
-  Axios.post('cart').then(data=>console.log(data.data))
- }
+  // Mapping
+  const showProducts = products.map((data, index) => (
+    <ProductCard
+      key={index}
+      title={data.title}
+      src={data.images[0]}
+      price={data.price}
+    />
+  ));
+  //  handleAddtoCart
+  const handleAddtoCart = () => {
+    Axios.post("cart").then((data) => console.log(data.data));
+  };
   return (
     <div className="MainUserDashboardCenter px-2" ref={centerRef}>
       <div className="header mt-4">
         <div className="text">
           <h4>Hello, Noura</h4>
-         <Location/>
+          <Location />
         </div>
         <div className="searchbox">
           <input type="text" placeholder="What do you want to eat today?" />
@@ -98,10 +108,10 @@ useEffect(()=>{
       />
       <ProductsContainer
         header="Populer Foods"
-        to='/PopulerProducts'
+        to="/PopulerProducts"
         data={
           <div className="d-flex justify-content-evenly gap-3">
-        {showProducts}
+            {loading ? <SkeletonShow length='3' width='250px' height='250px'/> : showProducts}
           </div>
         }
       />
