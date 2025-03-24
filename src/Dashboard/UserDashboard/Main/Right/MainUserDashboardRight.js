@@ -10,7 +10,7 @@ const MainUserDashboardRight = () => {
   const [show,setShow] =useState(false)
   useGSAP(() => {
     gsap.from(rightRef.current, {
-      x: 30,
+      y: 30,
       opacity: 0,
       duration: 1,
     });

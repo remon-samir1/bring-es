@@ -1,0 +1,36 @@
+.customerDetails{
+  padding: 20px 35px ;
+  border: 1px solid #D6D6D6;
+  border-radius: 10px;
+  flex: 1;
+}
+.customerDetails .header{
+  text-align: center;
+}
+.customerDetails h4{
+  font-size: 1.1rem;
+  color: var(--text-color);
+  text-align: center;
+}
+.customerDetails .element-container{
+display: flex;
+justify-content: flex-start;
+align-items: start;
+flex-direction: column;
+gap: 20px;
+padding: 10px 0;
+}
+.customerDetails .element-container .element{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.customerDetails .element-container .element .icon{
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.customerDetails .element-container .element span{
+  font-size: 1.1rem;
+  font-weight: 500;
+}

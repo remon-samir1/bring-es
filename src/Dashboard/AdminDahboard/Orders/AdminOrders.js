@@ -6,7 +6,7 @@ import Table from "../../../Components/Dashboard/Table/Table";
 
 const AdminOrders = () => {
   return (
-    <div>
+    <div className="AdminOrders px-3">
       <TopBar />
       <div className="Invoices mt-4">
         <div className="header">

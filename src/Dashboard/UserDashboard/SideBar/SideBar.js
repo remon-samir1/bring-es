@@ -8,7 +8,7 @@ const SideBar = () => {
   const sidebarRef = useRef(null)
   useGSAP(()=>{
     gsap.from(sidebarRef.current,{
-      x:-30,
+      y:-30,
       opacity:0,
       duration:1
     })

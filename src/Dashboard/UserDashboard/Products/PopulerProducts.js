@@ -43,7 +43,6 @@ const PopulerProducts = () => {
           setProducts(data.data.data.data), setTotal(data.data.data.total)
         )
       )
-      Axios.get('/category').then(data=>console.log(data.data))
       .finally(() => setSkeleton(false));
     viewRef.current.scrollIntoView({ behavior: "smooth" });
   }, [page, filter]);

@@ -1,0 +1,53 @@
+.OrderTrack{
+  padding: 20px;
+  border: 1px solid #D6D6D6;
+  border-radius: 10px;
+}
+.OrderTrack .header{
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+.OrderTrack .track-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+   margin: 10px 0;
+
+}
+.OrderTrack .track-item p {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.OrderTrack .track-item div:first-child{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #858585;
+  position: relative;
+  z-index: 999;
+  margin-bottom: 10px;
+}
+.OrderTrack .track-item::before{
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: -50%; 
+  transform: translateY(-50%);
+  background-color: #D6D6D6;
+  width: 100%; 
+  height: 4px;
+  z-index: 1;
+}
+.OrderTrack .track-item:first-child::before {
+  display: none;
+}
+.track-item.active div:first-child{
+  background-color: var(--btn-color) !important;
+}
+.OrderTrack .track-item.active::before{
+  background-color: var(--btn-color) !important;
+
+}
